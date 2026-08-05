@@ -1,0 +1,232 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: "Anton", sans-serif;
+    --font-body: "Inter", sans-serif;
+
+    --background: 0 0% 100%;
+    --foreground: 0 0% 6%;
+    --muted-foreground: 0 0% 42%;
+    --primary: 0 0% 6%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --muted: 0 0% 96%;
+    --accent: 0 0% 94%;
+    --border: 0 0% 90%;
+    --input: 0 0% 96%;
+
+    /* Measured and republished by SiteLayout; this is only the value used
+       for the very first paint, before the observer runs. */
+    --nav-h: 96px;
+
+    /* Vivid orange accent, carried on white */
+    --brand: 22 100% 52%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  section[id] {
+    /* Clears the sticky nav when jumping to an anchor, plus a little air.
+       Was a flat 5rem, which left headings tucked under a taller nav. */
+    scroll-margin-top: calc(var(--nav-h) + 1.5rem);
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+}
+
+@layer components {
+  /* Dimmed trailing clause in a section heading. Tuned per band so each lands
+     around 4.7:1 or better — one shared value cannot serve all three grounds. */
+  [data-tone="light"] .quiet {
+    opacity: 0.55;
+  }
+
+  [data-tone="dark"] .quiet {
+    opacity: 0.55;
+  }
+
+  [data-tone="brand"] .quiet {
+    opacity: 0.72;
+  }
+
+  /* Small uppercase labels need a higher bar than display type (4.5:1 vs 3:1),
+     and the orange band is the tightest ground, so it carries the least dimming. */
+  [data-tone="light"] .band-label,
+  [data-tone="dark"] .band-label {
+    opacity: 0.6;
+  }
+
+  [data-tone="brand"] .band-label {
+    opacity: 0.85;
+  }
+
+  /* --- Hero composition lock -------------------------------------------
+     The slogan has to stay put relative to the model, but she is placed by
+     object-cover (driven by viewport ASPECT) while type sized in vw/% is
+     driven by WIDTH alone. Those two disagree, so the composition drifts on
+     resize.
+
+     `--u` is one pixel of the source plate (2048x1143), expressed in viewport
+     units and scaled exactly the way object-cover scales it. Every offset
+     below is then a plate coordinate, so type and model scale as one piece.
+
+       max(...)  reproduces cover: whichever axis has to stretch further wins.
+       min(...)  caps it so the widest element (SPEC.'s right edge, plate
+                 x=1741) can never be pushed off a tall, narrow window.
+
+     Consumed from the markup as lg:pl-[calc(160*var(--u))] etc. The offsets
+     live there rather than here because Tailwind's utilities sit in a later
+     cascade layer than @layer components — a rule here loses to sm:px-10. */
+  .hero-stage {
+    --u: min(max(1vw / 20.48, 1vh / 11.43), 1vw / 17.5);
+  }
+
+  /* Hairline rules. Scoped to the band so a section can change tone without
+     every border in it needing to be rewritten. */
+  [data-tone="light"] .rule {
+    border-color: hsl(var(--foreground) / 0.2);
+  }
+
+  [data-tone="dark"] .rule {
+    border-color: hsl(var(--background) / 0.28);
+  }
+
+  [data-tone="brand"] .rule {
+    border-color: hsl(var(--foreground) / 0.3);
+  }
+
+  /* Secondary and tertiary text. Orange is the tightest ground for contrast,
+     so it carries the least dimming at every level. */
+  [data-tone="light"] .dim {
+    opacity: 0.65;
+  }
+
+  [data-tone="dark"] .dim {
+    opacity: 0.72;
+  }
+
+  [data-tone="brand"] .dim {
+    opacity: 0.82;
+  }
+
+  [data-tone="light"] .dim-sm,
+  [data-tone="dark"] .dim-sm {
+    opacity: 0.58;
+  }
+
+  [data-tone="brand"] .dim-sm {
+    opacity: 0.82;
+  }
+}
+
+@layer utilities {
+  /* Secondary button on a light ground: a hairline outline that reads against
+     white, rather than the white-on-white sheen the dark theme relied on. */
+  .liquid-glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid hsl(var(--foreground) / 0.16);
+    box-shadow: 0 1px 2px hsl(var(--foreground) / 0.05);
+    position: relative;
+  }
+
+  .liquid-glass:hover {
+    border-color: hsl(var(--foreground) / 0.32);
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .animate-marquee {
+    animation: marquee 38s linear infinite;
+  }
+
+  .marquee-mask {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 12%,
+      #000 88%,
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 12%,
+      #000 88%,
+      transparent
+    );
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-marquee {
+      animation: none;
+    }
+  }
+
+  .animate-fade-rise {
+    animation: fade-rise 0.8s ease-out both;
+  }
+
+  .animate-fade-rise-delay {
+    animation: fade-rise 0.8s ease-out 0.2s both;
+  }
+
+  .animate-fade-rise-delay-2 {
+    animation: fade-rise 0.8s ease-out 0.4s both;
+  }
+
+  .animate-fade-rise-delay-3 {
+    animation: fade-rise 0.8s ease-out 0.55s both;
+  }
+
+  .animate-fade-rise-delay-4 {
+    animation: fade-rise 0.8s ease-out 0.7s both;
+  }
+
+  /* Film grain. Kept very light on the white ground — `overlay` against white
+     reads as dirt rather than texture, so this multiplies faintly instead. */
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
+
+/* Clientele marquee. The track holds the list twice, so translating exactly
+   -50% lands on an identical frame and the loop is seamless. */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes fade-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
