@@ -28,11 +28,14 @@ export default function ClientelePage() {
         Malaysia and the wider region.
       </SectionLede>
 
-      <div className="mt-14 border-y rule py-10 sm:mt-20 sm:py-12">
+      {/* border-t, not border-y: the grid below opens with its own rule, so a
+          bottom border here just drew a second line 56px away with an empty
+          band between the two. The grid's rule closes the carousel instead. */}
+      <div className="mt-14 border-t rule py-10 sm:mt-20 sm:py-12">
         <LogoCarousel />
       </div>
 
-      <dl className={`${DIVIDED_GRID} mt-14 sm:grid-cols-2 lg:grid-cols-4`}>
+      <dl className={`${DIVIDED_GRID} sm:grid-cols-2 lg:grid-cols-4`}>
         {SEGMENTS.map((segment) => (
           <div
             key={segment.label}

@@ -48,7 +48,7 @@ export default function ArticlePage() {
 
   if (!article) {
     return (
-      <Section id="journal-article" label="Journal" tone="light">
+      <Section id="journal-article" label="Blog" tone="light">
         <SectionHeading>
           Article <Quiet>not found.</Quiet>
         </SectionHeading>
@@ -56,7 +56,7 @@ export default function ArticlePage() {
           to="/journal"
           className="mt-10 inline-flex items-center gap-3 text-sm uppercase tracking-[0.2em] transition-opacity hover:opacity-60"
         >
-          <span aria-hidden="true">←</span> Back to journal
+          <span aria-hidden="true">←</span> Back to blog
         </Link>
       </Section>
     );
@@ -68,7 +68,7 @@ export default function ArticlePage() {
   const next = ARTICLES[(index + 1) % ARTICLES.length];
 
   return (
-    <Section id="journal-article" label="Journal" tone="light">
+    <Section id="journal-article" label="Blog" tone="light">
       {/* Constrained measure: the band's full width is far too wide to read
           comfortably at body size. */}
       <article className="max-w-2xl">
@@ -95,7 +95,7 @@ export default function ArticlePage() {
       <nav className="mt-16 flex flex-col gap-6 border-t rule pt-8 sm:flex-row sm:items-baseline sm:justify-between">
         <Link
           to="/journal"
-          className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.2em] transition-opacity hover:opacity-60"
+          className="inline-flex min-h-[44px] items-center gap-3 self-start text-sm uppercase tracking-[0.2em] transition-opacity hover:opacity-60"
         >
           <span aria-hidden="true">←</span> All articles
         </Link>

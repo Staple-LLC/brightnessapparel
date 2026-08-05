@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import SpecularButton from "@/components/ui/specular-button";
 
 const heroPlate = new URL("../assets/hero-motion.webp", import.meta.url).href;
 const heroSubject = new URL("../assets/hero-subject.webp", import.meta.url).href;
@@ -13,7 +14,13 @@ export default function HomePage() {
     <section
       id="home"
       data-tone="dark"
-      className="hero-stage relative z-10 mt-[calc(var(--nav-h)*-1)] flex min-h-screen flex-col overflow-hidden bg-[#4a2a20] text-background"
+      /* min-h-screen is 100vh, which on a phone is the viewport with the URL
+         bar RETRACTED — so at first paint the buttons sit below the fold,
+         under the browser chrome. min-h-svh is the small viewport (chrome
+         shown) and always fits. It is listed second because Tailwind emits
+         it after screen, so browsers without svh drop it and keep the vh
+         fallback. dvh is wrong here: it resizes mid-scroll and reflows. */
+      className="hero-stage relative z-10 mt-[calc(var(--nav-h)*-1)] flex min-h-screen min-h-svh flex-col overflow-hidden bg-[#4a2a20] text-background"
     >
       {/* Layer 1 — full plate, including the motion smear. Anchored left
           because cover has to crop somewhere and the right edge is empty
@@ -65,38 +72,82 @@ export default function HomePage() {
       {/* The eyebrow strapline is gone: it collided with the raised slogan and
           repeated what the subline already says. */}
       <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col justify-end px-6 pb-12 pt-28 sm:px-10 lg:px-16">
-        <div className="max-w-lg">
+        {/* max-w-xl, not lg: the specular buttons carry more padding than the
+            ones they replaced and the pair needs 527px, which wrapped inside
+            the old 512px measure. The subline sets its own max-w-md, so this
+            only widens the button row. */}
+        <div className="max-w-xl">
           <p className="animate-fade-rise-delay-2 max-w-md text-sm leading-relaxed text-background/75 sm:text-base">
             Performance apparel, uniforms, and retail-ready collections,
             manufactured in Malaysia.
           </p>
 
           <div className="animate-fade-rise-delay-3 mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
-            <Button
+            {/* Both CTAs are SpecularButton. The primary keeps a solid fill
+                (tintOpacity 1) rather than the component's default glass —
+                two identical translucent buttons would leave the hero with no
+                primary action. Its rim light is brand orange, which reads on
+                white where the default white line would not.
+
+                radius 999 clamps to a pill, matching every other button on
+                the site; the shader clamps its own corner to height/2. */}
+            <SpecularButton
               size="lg"
-              className="group gap-3 bg-background px-8 text-foreground hover:bg-background/90"
+              radius={999}
+              tint="#ffffff"
+              tintOpacity={1}
+              textColor="hsl(0 0% 6%)"
+              lineColor="#ff640a"
+              baseColor="#d4d4d4"
+              intensity={1.4}
+              proximity={280}
+              /* Transparent border of the same width as the outlined button
+                 beside it, so both border boxes measure the same — otherwise
+                 the pair sit 2px apart in height on one row. */
+              style={{ ["--sb-border" as string]: "1px solid transparent" }}
+              className="group"
               onClick={() => navigate("/contact")}
             >
-              Discuss a Project
-              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-foreground text-background transition-transform duration-300 group-hover:translate-x-1">
-                →
+              {/* The component wraps every child in one .specular-button__label
+                  span, so the button's own flex gap never reaches in here — the
+                  block-level badge below would drop onto its own line. This row
+                  is what keeps label and badge side by side. */}
+              <span className="flex items-center gap-3">
+                Discuss a Project
+                {/* Two arrows in a clipped circle: one leaves, the next arrives. */}
+                <span className="relative flex h-7 w-7 shrink-0 items-center justify-center overflow-hidden rounded-full bg-[hsl(var(--brand))] text-foreground">
+                  <ArrowRight className="size-3.5 transition-transform duration-300 ease-out group-hover:translate-x-6 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0" />
+                  <ArrowRight
+                    aria-hidden="true"
+                    className="absolute size-3.5 -translate-x-6 transition-transform duration-300 ease-out group-hover:translate-x-0 motion-reduce:hidden"
+                  />
+                </span>
               </span>
-            </Button>
+            </SpecularButton>
 
-            {/* Not variant="glass": that utility hardcodes a near-white fill
-                for the light theme and wins on layer order. */}
-            <Button
-              variant="ghost"
+            {/* The glass variant, as designed. --sb-border is the fallback
+                edge: the shine only fades in as the pointer nears, so without
+                it this button is invisible until approached — and invisible
+                outright on a touch screen, where there is no pointer at all. */}
+            <SpecularButton
               size="lg"
-              className="border border-background/40 px-8 text-background backdrop-blur-sm hover:border-background hover:bg-background/10 hover:text-background"
+              radius={999}
+              textColor="hsl(0 0% 100%)"
+              lineColor="#ffffff"
+              baseColor="#8a8a8a"
+              blur={4}
+              proximity={280}
+              style={{ ["--sb-border" as string]: "1px solid rgba(255,255,255,0.7)" }}
               onClick={() =>
                 document
                   .getElementById("studio")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
             >
-              View Capabilities
-            </Button>
+              {/* h-7 matches the arrow badge opposite, so both buttons enclose
+                  the same 28px inner box and end up the same height. */}
+              <span className="flex h-7 items-center">View Capabilities</span>
+            </SpecularButton>
           </div>
         </div>
       </div>

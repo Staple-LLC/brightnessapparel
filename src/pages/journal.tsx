@@ -4,7 +4,7 @@ import { ARTICLES } from "@/content/articles";
 
 export default function JournalPage() {
   return (
-    <Section id="journal" label="Journal" tone="light">
+    <Section id="journal" label="Blog" tone="light">
       <SectionHeading>
         Notes from <Quiet>the factory floor.</Quiet>
       </SectionHeading>

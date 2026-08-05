@@ -76,7 +76,7 @@ export default function StudioPage() {
       <button
         type="button"
         onClick={() => navigate("/contact")}
-        className="group mt-14 inline-flex items-center gap-3 text-sm uppercase tracking-[0.2em] transition-opacity hover:opacity-60"
+        className="group mt-14 inline-flex min-h-[44px] items-center gap-3 text-sm uppercase tracking-[0.2em] transition-opacity hover:opacity-60"
       >
         Start an Order
         <span className="transition-transform duration-300 group-hover:translate-x-1">

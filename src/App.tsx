@@ -1,5 +1,5 @@
 import { Suspense, lazy } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import SiteLayout from "@/components/site-layout";
 import HomePage from "@/pages/home";
 import StudioPage from "@/pages/studio";
@@ -15,6 +15,7 @@ import ProcessPage from "@/pages/process";
    ship to every homepage visitor even though nothing renders them. */
 const AboutPage = lazy(() => import("@/pages/about"));
 const GalleryPage = lazy(() => import("@/pages/gallery"));
+const CollectionPage = lazy(() => import("@/pages/collection"));
 const JournalPage = lazy(() => import("@/pages/journal"));
 const ArticlePage = lazy(() => import("@/pages/article"));
 const ReachUsPage = lazy(() => import("@/pages/reach-us"));
@@ -38,18 +39,39 @@ function HomeRoute() {
   );
 }
 
+/* Occupies the viewport while a route's chunk is fetched, so the footer does
+   not ride up and then drop back. The bar itself only becomes visible if the
+   fetch outlasts a quarter second — see .loader-track. */
+function RouteLoading() {
+  return (
+    <div className="min-h-screen" role="status" aria-label="Loading page">
+      <div className="loader-track h-px w-full overflow-hidden">
+        <div className="loader-bar h-full w-1/4 bg-current opacity-40" />
+      </div>
+    </div>
+  );
+}
+
 export default function App() {
+  /* Keyed on the path so the wrapper remounts per navigation and the enter
+     animation replays. Without the key React reuses the element and the
+     animation runs once, on first load only. */
+  const { pathname } = useLocation();
+
   return (
     <SiteLayout>
-      <Suspense fallback={<div className="min-h-screen" />}>
-        <Routes>
-          <Route path="/" element={<HomeRoute />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/portfolio" element={<GalleryPage />} />
-          <Route path="/journal" element={<JournalPage />} />
-          <Route path="/journal/:slug" element={<ArticlePage />} />
-          <Route path="/contact" element={<ReachUsPage />} />
-        </Routes>
+      <Suspense fallback={<RouteLoading />}>
+        <div key={pathname} className="animate-page-in">
+          <Routes>
+            <Route path="/" element={<HomeRoute />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/portfolio" element={<GalleryPage />} />
+            <Route path="/portfolio/:slug" element={<CollectionPage />} />
+            <Route path="/journal" element={<JournalPage />} />
+            <Route path="/journal/:slug" element={<ArticlePage />} />
+            <Route path="/contact" element={<ReachUsPage />} />
+          </Routes>
+        </div>
       </Suspense>
     </SiteLayout>
   );

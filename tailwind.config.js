@@ -4,6 +4,14 @@ import tailwindcssAnimate from "tailwindcss-animate";
 export default {
   darkMode: ["class"],
   content: ["./index.html", "./src/**/*.{ts,tsx}"],
+  future: {
+    /* Wraps every hover:/group-hover: rule in @media (hover: hover). Without
+       it a tap on a touch screen latches :hover until the next tap elsewhere —
+       most visibly on the portfolio cards, where the tapped card's siblings
+       stay scaled down and blurred after you navigate back. Desktop is
+       unaffected: pointers report hover: hover. */
+    hoverOnlyWhenSupported: true,
+  },
   theme: {
     extend: {
       fontFamily: {
@@ -13,6 +21,7 @@ export default {
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        ring: "hsl(var(--ring))",
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",

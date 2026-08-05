@@ -63,11 +63,19 @@ export function Quiet({ children }: { children: ReactNode }) {
    24px on one side and 1px on the other. Row-end cells drop both the border
    and that padding, so no rule is left hanging at the container edge and the
    last column's text wraps on the same measure as the rest. */
-export const DIVIDED_GRID = "grid gap-x-8 gap-y-10 border-t rule";
+/* Single column on a phone, so the vertical rules that carry the structure at
+   sm+ are all suppressed. Left as-is that turned every grid into blocks
+   floating 88px apart with nothing between them. Below sm the row gap closes
+   and each cell draws its own top rule instead, so the same markup reads as a
+   ruled list on a phone and as columns on a desktop. */
+export const DIVIDED_GRID = "grid gap-x-8 gap-y-0 border-t rule sm:gap-y-10";
 
 export function dividedCell(lgCols: 3 | 4) {
   return cn(
     "rule py-6 sm:border-r sm:pr-8",
+    /* Mobile: horizontal rules. The first cell skips its own — the grid
+       container already draws a rule directly above it. */
+    "border-t first:border-t-0 sm:border-t-0",
     "sm:[&:nth-child(2n)]:border-r-0 sm:[&:nth-child(2n)]:pr-0",
     "lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(2n)]:pr-8",
     lgCols === 4
@@ -77,8 +85,10 @@ export function dividedCell(lgCols: 3 | 4) {
 }
 
 /* Holds two lines so a title that wraps does not push its description out of
-   line with its neighbours. Em-based, so it tracks whatever size it is used at. */
-export const CELL_TITLE = "min-h-[1.9em]";
+   line with its neighbours. Em-based, so it tracks whatever size it is used at.
+   Only from sm: in one column there are no neighbours to align to, so the
+   reserved second line is pure dead space. */
+export const CELL_TITLE = "sm:min-h-[1.9em]";
 
 export function SectionLede({ children }: { children: ReactNode }) {
   return (
