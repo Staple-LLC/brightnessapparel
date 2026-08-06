@@ -346,11 +346,23 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
             </button>
           </div>
         </div>
+      </nav>
 
-        {/* Mobile panel. Sits inside the sticky nav so it inherits the tone
-            colours, and covers the viewport below the bar. */}
-        <div
+      {/* Mobile panel — a SIBLING of the bar, not a child of it.
+
+            It used to live inside the <nav>, which broke the moment the page
+            scrolled: once scrolled the bar gains backdrop-blur, and
+            backdrop-filter makes an element a containing block for fixed
+            descendants exactly the way transform does. The panel is
+            `top: var(--nav-h); bottom: 0`, so resolved against an 84px bar
+            instead of the viewport it computed to height 0 — open, painted,
+            and a zero-pixel sliver. At the top of the page there is no blur,
+            which is why it worked on the hero and nowhere else.
+
+            Kept as its own landmark so the links stay inside a <nav>. */}
+        <nav
           id="mobile-menu"
+          aria-label="Mobile"
           className={cn(
             "fixed inset-x-0 bottom-0 top-[var(--nav-h)] z-20 overflow-y-auto lg:hidden",
             /* visibility is in the transition list deliberately. CSS holds a
@@ -424,7 +436,6 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
               Start Production
             </Link>
           </div>
-        </div>
       </nav>
 
       {children}
