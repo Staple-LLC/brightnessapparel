@@ -21,21 +21,47 @@ export function FactoryVideo({ className }: { className?: string }) {
     if (!video) return;
 
     const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let frame = 0;
 
+    /* Playback is gated on the video being on screen. Calling play() on mount
+       buffers the whole 1.7MB file, which was acceptable when this lived on a
+       route somebody chose to open; on the home page it would land on every
+       visitor, including the ones who never scroll this far. Pausing on the
+       way out costs nothing and stops decoding a video nobody is watching.
+
+       Measured on scroll rather than through an IntersectionObserver, matching
+       the nav spy and the stat counters. */
     const sync = () => {
-      if (media.matches) {
+      frame = 0;
+      const rect = video.getBoundingClientRect();
+      const onScreen = rect.top < window.innerHeight && rect.bottom > 0;
+
+      if (media.matches || !onScreen) {
         video.pause();
-        video.currentTime = 0;
-      } else {
+        if (media.matches) video.currentTime = 0;
+        return;
+      }
+      if (video.paused) {
         void video.play().catch(() => {
           /* Autoplay refused — the poster stays, which is a fine fallback. */
         });
       }
     };
 
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(sync);
+    };
+
     sync();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
     media.addEventListener("change", sync);
-    return () => media.removeEventListener("change", sync);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      media.removeEventListener("change", sync);
+      cancelAnimationFrame(frame);
+    };
   }, []);
 
   return (

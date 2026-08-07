@@ -77,9 +77,11 @@ export default function HomePage() {
             the old 512px measure. The subline sets its own max-w-md, so this
             only widens the button row. */}
         <div className="max-w-xl">
-          <p className="animate-fade-rise-delay-2 max-w-md text-sm leading-relaxed text-background/75 sm:text-base">
-            Performance apparel, uniforms, and retail-ready collections,
-            manufactured in Malaysia.
+          {/* max-w-lg, up from md: this line is half again as long as the one
+              it replaced and ran to four lines on the old measure. */}
+          <p className="animate-fade-rise-delay-2 max-w-lg text-sm leading-relaxed text-background/75 sm:text-base">
+            Event Apparel, Corporate Uniforms, Fashion and Sports apparel
+            factory, 30+ Years of Manufacturing Excellence In Malaysia.
           </p>
 
           <div className="animate-fade-rise-delay-3 mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">

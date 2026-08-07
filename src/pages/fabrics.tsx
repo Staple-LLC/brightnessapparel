@@ -1,100 +1,82 @@
 import { Section, SectionHeading, SectionLede, Quiet } from "@/components/section";
-
-/* Portrait source: this column renders at roughly 3:4, so a landscape image
-   would lose most of its width to object-cover. */
-const stitchImage = new URL("../assets/fabrics-stack.webp", import.meta.url).href;
-
-const FABRICS = [
-  {
-    name: "Cotton",
-    use: "Tees, hoodies, casualwear",
-    description:
-      "Breathable and soft against the skin. The default for everyday retail garments and comfortable branded wear.",
-  },
-  {
-    name: "Spandex",
-    use: "Activewear, compression",
-    description:
-      "Blended in for stretch and recovery, so garments move with the body and hold their shape after wear.",
-  },
-  {
-    name: "Microfiber",
-    use: "Performance jerseys",
-    description:
-      "Lightweight and quick-drying with excellent sublimation take-up. A staple for race and team apparel.",
-  },
-  {
-    name: "Pique",
-    use: "Polo shirts, uniforms",
-    description:
-      "Textured knit with a structured surface and good airflow. The standard choice for corporate polos.",
-  },
-  {
-    name: "Fleece",
-    use: "Hoodies, outerwear",
-    description:
-      "Brushed inner face for warmth and weight. Used for pullovers, zip-ups, and cooler-weather pieces.",
-  },
-  {
-    name: "Eyelet",
-    use: "Ventilated sportswear",
-    description:
-      "Open mesh structure that moves air and moisture away from the body during sustained activity.",
-  },
-];
+import { ACTIVE_CATEGORIES, fabricsIn, FABRICS } from "@/content/fabrics";
 
 export default function FabricsPage() {
   return (
-    <Section id="fabrics" label="Our fabric materials" tone="dark">
-      <div className="grid gap-12 lg:grid-cols-12 lg:gap-10">
-        <div className="lg:col-span-7">
-          <SectionHeading>
-            Material first, <Quiet>then everything else.</Quiet>
-          </SectionHeading>
+    <Section id="fabrics" label="Material library" tone="dark">
+      <SectionHeading>
+        Material first, <Quiet>then everything else.</Quiet>
+      </SectionHeading>
 
-          <SectionLede>
-            Fabric decides how a garment fits, breathes, prints, and lasts. We
-            help match the material to how the piece will actually be used.
-          </SectionLede>
+      <SectionLede>
+        Fabric decides how a garment fits, breathes, prints, and lasts. We help
+        match the material to how the piece will actually be used.
+      </SectionLede>
 
-          <dl className="mt-12 border-t rule">
-            {FABRICS.map((fabric) => (
+      {FABRICS.length === 0 ? null : (
+        <div className="mt-14 sm:mt-20">
+          {ACTIVE_CATEGORIES.map((category) => {
+            const swatches = fabricsIn(category.id);
+
+            return (
+              /* Each family is a band: name on the left, its swatches filling
+                 the rest. The rule sits on the row rather than between rows so
+                 the first family gets one too, which closes the gap under the
+                 lede. */
               <div
-                key={fabric.name}
-                className="grid gap-2 border-b rule py-6 sm:grid-cols-12 sm:gap-6"
+                key={category.id}
+                className="rule grid gap-6 border-t py-10 lg:grid-cols-12 lg:gap-8"
               >
-                <dt
-                  className="text-xl uppercase leading-[0.95] sm:col-span-3"
-                  style={{ fontFamily: "var(--font-display)" }}
-                >
-                  {fabric.name}
-                </dt>
-                <span className="text-[11px] uppercase tracking-[0.2em] dim-sm sm:col-span-3">
-                  {fabric.use}
-                </span>
-                <dd className="text-sm leading-relaxed dim sm:col-span-6">
-                  {fabric.description}
-                </dd>
+                <div className="lg:col-span-2">
+                  <h3
+                    className="text-2xl uppercase leading-none sm:text-3xl"
+                    style={{ fontFamily: "var(--font-display)" }}
+                  >
+                    {category.label}
+                  </h3>
+                  {/* Comma-separated in the data, one use per line here — it
+                      reads as a label rather than a sentence, which is what
+                      the reference does. */}
+                  <p className="dim-sm mt-3 text-[11px] uppercase leading-relaxed tracking-[0.2em]">
+                    {category.blurb.split(", ").map((use) => (
+                      <span key={use} className="block">
+                        {use}
+                      </span>
+                    ))}
+                  </p>
+                </div>
+
+                <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:col-span-10 lg:grid-cols-5">
+                  {swatches.map((fabric) => (
+                    <li
+                      key={fabric.file}
+                      className="overflow-hidden rounded-lg bg-background/[0.06]"
+                    >
+                      <img
+                        src={fabric.src}
+                        alt={`${fabric.name} fabric swatch`}
+                        loading="lazy"
+                        decoding="async"
+                        className="aspect-square w-full object-cover"
+                      />
+                      <div className="p-3">
+                        <p className="text-[11px] uppercase leading-tight tracking-[0.06em]">
+                          {fabric.name}
+                        </p>
+                        {fabric.gsm.length > 0 && (
+                          <p className="dim-sm mt-1 text-[11px] italic tabular-nums">
+                            {fabric.gsm.map((g) => `${g}GSM`).join(", ")}
+                          </p>
+                        )}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
               </div>
-            ))}
-          </dl>
-
-          <p className="mt-8 text-sm dim">
-            Working with something not listed? We source to specification —
-            send us the fabric reference and we will quote against it.
-          </p>
+            );
+          })}
         </div>
-
-        <div className="lg:col-span-5">
-          <img
-            src={stitchImage}
-            alt="Stacked folded fabrics showing knit, ribbed, mesh and jersey textures"
-            className="h-full max-h-[40rem] w-full object-cover"
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
-      </div>
+      )}
     </Section>
   );
 }

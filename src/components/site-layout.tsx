@@ -16,14 +16,20 @@ const brandLogo = new URL("../assets/balogo.webp", import.meta.url).href;
 const brandLogoMono = new URL("../assets/balogo-mono.webp", import.meta.url)
   .href;
 
+/* Association mark. Kept in its own colours on a white chip — it is MKMA's
+   trademark, not ours to recolour, and the artwork has a white ground that
+   would otherwise read as a rectangle on the dark footer. */
+const mkmaLogo = new URL("../assets/mkma.jpeg", import.meta.url).href;
+
 /* Nav entries are either a section on the home page (`id`) or a route (`to`). */
 type NavLink = { label: string; id?: string; to?: string };
 
 const NAV_LINKS: NavLink[] = [
-  { label: "About", to: "/about" },
+  { label: "About", id: "about" },
   { label: "Services", id: "studio" },
   { label: "Solutions", id: "one-stop" },
   { label: "Methods", id: "printing" },
+  { label: "Materials", to: "/materials" },
   { label: "Portfolio", to: "/portfolio" },
   { label: "Blog", to: "/journal" },
   { label: "Contact", to: "/contact" },
@@ -102,11 +108,11 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
     document.body.style.overflow = "hidden";
     window.addEventListener("keydown", onKey);
 
-    /* The panel is lg:hidden, so growing past that breakpoint — rotating a
+    /* The panel is xl:hidden, so growing past that breakpoint — rotating a
        tablet, dragging a desktop window wider — would hide it via CSS while
        menuOpen stayed true, leaving the page scroll-locked with nothing on
        screen to close. Matching the query in JS keeps state and CSS agreed. */
-    const wide = window.matchMedia("(min-width: 1024px)");
+    const wide = window.matchMedia("(min-width: 1280px)");
     const onWide = () => wide.matches && setMenuOpen(false);
     onWide();
     wide.addEventListener("change", onWide);
@@ -270,11 +276,11 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
             />
           </Link>
 
-          {/* lg, not md: the seven links measure 673px and the CTA another
-              185px, so the full row needs ~984px including the gutters. Handing
-              over at md (768px) pushed the CTA past the right edge and gave the
-              whole document a horizontal scroll on tablets. */}
-          <div className="hidden items-center gap-8 lg:flex">
+          {/* xl, not lg: this row grew to eight links when Materials became
+              its own page, measuring 755px — with the logo, the CTA and the
+              64px gutters that needs ~1150px, so at lg (1024px) the document
+              gained a horizontal scrollbar. Measured, not guessed. */}
+          <div className="hidden items-center gap-6 xl:flex">
             {NAV_LINKS.map((link) => {
               /* Route links are highlighted by the URL; section links by the
                  scroll spy, and only while the home page is the one showing. */
@@ -318,7 +324,7 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
               Start Production
             </Link>
 
-            {/* Below lg the link row is hidden, which previously left the site
+            {/* Below xl the link row is hidden, which previously left the site
                 with no navigation at all on a phone. */}
             <button
               type="button"
@@ -327,7 +333,7 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
               aria-controls="mobile-menu"
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               className={cn(
-                "flex h-11 w-11 flex-col items-center justify-center gap-[5px] rounded-full border transition-colors duration-500 lg:hidden",
+                "flex h-11 w-11 flex-col items-center justify-center gap-[5px] rounded-full border transition-colors duration-500 xl:hidden",
                 tone === "dark" ? "border-background/40" : "border-foreground/30"
               )}
             >
@@ -364,7 +370,7 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
           id="mobile-menu"
           aria-label="Mobile"
           className={cn(
-            "fixed inset-x-0 bottom-0 top-[var(--nav-h)] z-20 overflow-y-auto lg:hidden",
+            "fixed inset-x-0 bottom-0 top-[var(--nav-h)] z-20 overflow-y-auto xl:hidden",
             /* visibility is in the transition list deliberately. CSS holds a
                transitioning visibility at `visible` for the whole duration,
                so the panel stays painted while it fades out — and once it
@@ -441,7 +447,29 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
       {children}
 
       <footer className="relative z-10 bg-foreground text-background">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 px-6 py-10 text-[11px] uppercase tracking-[0.18em] sm:flex-row sm:items-center sm:px-10 lg:px-16">
+        {/* Membership sits above the copyright line rather than inside the
+            About band alone: it is a credential, and a visitor who lands
+            straight on Portfolio or Contact never sees the About section. */}
+        <div className="mx-auto max-w-7xl px-6 pt-10 sm:px-10 lg:px-16">
+          <div className="flex items-center gap-4 border-b border-background/15 pb-8">
+            <span className="shrink-0 rounded-md bg-white p-2">
+              <img
+                src={mkmaLogo}
+                alt="Malaysian Knitting Manufacturers Association"
+                width={250}
+                height={91}
+                loading="lazy"
+                decoding="async"
+                className="h-6 w-auto"
+              />
+            </span>
+            <p className="text-[11px] uppercase leading-relaxed tracking-[0.18em] opacity-70">
+              Proud member of the Malaysian Knitting Manufacturers Association
+            </p>
+          </div>
+        </div>
+
+        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 px-6 py-8 text-[11px] uppercase tracking-[0.18em] sm:flex-row sm:items-center sm:px-10 lg:px-16">
           <span className="text-base normal-case tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
             Brightness Apparel
           </span>

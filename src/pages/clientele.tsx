@@ -9,11 +9,26 @@ import {
 } from "@/components/section";
 import { LogoCarousel } from "@/components/logo-carousel";
 
+/* The detail line under each segment is written as searchable keywords rather
+   than prose — these are the terms buyers actually search for, and this is the
+   only place on the site where sports and garment types appear together. */
 const SEGMENTS = [
-  { label: "Event organizers", detail: "Races, tournaments, activations" },
-  { label: "Corporate teams", detail: "Uniform and staff apparel programs" },
-  { label: "Apparel brands", detail: "Repeat OEM production runs" },
-  { label: "New labels", detail: "First collections and sampling" },
+  {
+    label: "Event organizers",
+    detail: "Running, Soccer, Pickleball, Tournament & Event Merchandises",
+  },
+  {
+    label: "Corporate teams",
+    detail: "Corporate Uniforms, Staff Polos, Company Tees & Workwear",
+  },
+  {
+    label: "Clothing brands",
+    detail: "Streetwear, Private Label, OEM Production & Repeat Runs",
+  },
+  {
+    label: "New labels",
+    detail: "First Collections, Sampling, Small Batch & Brand Development",
+  },
 ];
 
 export default function ClientelePage() {

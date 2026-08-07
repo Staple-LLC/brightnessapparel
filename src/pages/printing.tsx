@@ -1,8 +1,25 @@
 import { Section, SectionHeading, SectionLede, Quiet } from "@/components/section";
 
+/* Method photography, folder-driven like the process and services sections.
+   Drop a file named after the method slug into src/assets/printing — see the
+   README there. */
+const photos = import.meta.glob("../assets/printing/*.{webp,jpg,jpeg,png,WEBP,JPG,JPEG,PNG}", {
+  eager: true,
+  query: "?url",
+  import: "default",
+}) as Record<string, string>;
+
+function photoFor(slug: string) {
+  const key = Object.keys(photos).find(
+    (path) => path.split("/").pop()!.replace(/\.[^.]+$/, "") === slug
+  );
+  return key ? photos[key] : undefined;
+}
+
 const METHODS = [
   {
     number: "01",
+    slug: "sublimation",
     title: "Sublimation Printing",
     best: "Full-coverage polyester",
     description:
@@ -10,6 +27,7 @@ const METHODS = [
   },
   {
     number: "02",
+    slug: "silk-screen",
     title: "Silk Screen Printing",
     best: "High volume, solid colour",
     description:
@@ -17,6 +35,7 @@ const METHODS = [
   },
   {
     number: "03",
+    slug: "embroidery",
     title: "Embroidery",
     best: "Logos and uniforms",
     description:
@@ -24,6 +43,7 @@ const METHODS = [
   },
   {
     number: "04",
+    slug: "dtf",
     title: "DTF Printing",
     best: "Mixed fabrics, small runs",
     description:
@@ -31,6 +51,7 @@ const METHODS = [
   },
   {
     number: "05",
+    slug: "dtg",
     title: "DTG Printing",
     best: "Cotton, photographic detail",
     description:
@@ -38,6 +59,7 @@ const METHODS = [
   },
   {
     number: "06",
+    slug: "heat-transfer-vinyl",
     title: "Heat Transfer Vinyl",
     best: "Names and numbers",
     description:
@@ -57,29 +79,62 @@ export default function PrintingPage() {
         recommend the one that holds up best for what you are producing.
       </SectionLede>
 
-      <ul className="mt-14 border-t rule sm:mt-20">
-        {METHODS.map((method) => (
-          <li
-            key={method.number}
-            className="grid gap-2 border-b rule py-6 sm:grid-cols-12 sm:items-baseline sm:gap-6"
-          >
-            <span className="text-xs tracking-[0.2em] dim-sm sm:col-span-1">
-              {method.number}
-            </span>
-            <h3
-              className="text-xl uppercase leading-[0.95] sm:col-span-4"
-              style={{ fontFamily: "var(--font-display)" }}
+      <ul className="rule mt-14 border-t sm:mt-20">
+        {METHODS.map((method) => {
+          const photo = photoFor(method.slug);
+
+          return (
+            <li
+              key={method.number}
+              /* items-center rather than the items-baseline this used before
+                 the photograph existed: a baseline shared with a 180px image
+                 drops the text to the foot of the row. */
+              className="rule grid gap-3 border-b py-6 sm:grid-cols-12 sm:items-center sm:gap-6"
             >
-              {method.title}
-            </h3>
-            <span className="text-[11px] uppercase tracking-[0.2em] dim-sm sm:col-span-3">
-              {method.best}
-            </span>
-            <p className="text-sm leading-relaxed dim sm:col-span-4">
-              {method.description}
-            </p>
-          </li>
-        ))}
+              {/* aspect-[3/2] matches the source files exactly — all six are
+                  1536x1024 — so nothing is cropped at any column width. */}
+              <div className="aspect-[3/2] overflow-hidden rounded-lg bg-foreground/[0.06] sm:col-span-3">
+                {photo ? (
+                  <img
+                    src={photo}
+                    alt={`${method.title} — Brightness Apparel`}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full w-full object-cover"
+                  />
+                ) : (
+                  <div
+                    className="flex h-full w-full items-center justify-center"
+                    aria-hidden="true"
+                  >
+                    <span className="dim-sm text-[10px] uppercase tracking-[0.2em]">
+                      Photography to come
+                    </span>
+                  </div>
+                )}
+              </div>
+
+              <span className="dim-sm text-xs tracking-[0.2em] sm:col-span-1">
+                {method.number}
+              </span>
+
+              <h3
+                className="text-xl uppercase leading-[0.95] sm:col-span-3"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                {method.title}
+              </h3>
+
+              <span className="dim-sm text-[11px] uppercase tracking-[0.2em] sm:col-span-2">
+                {method.best}
+              </span>
+
+              <p className="dim text-sm leading-relaxed sm:col-span-3">
+                {method.description}
+              </p>
+            </li>
+          );
+        })}
       </ul>
     </Section>
   );

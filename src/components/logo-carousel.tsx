@@ -43,7 +43,13 @@ export function LogoCarousel() {
                 decoding="async"
                 width={400}
                 height={200}
-                className="h-14 w-28 object-contain opacity-60 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0 sm:h-20 sm:w-40 lg:h-24 lg:w-48"
+                /* Full colour, at full opacity. These were previously
+                   greyscaled and held at 60% — the usual "logo wall" treatment
+                   — which on a white band left them looking washed out rather
+                   than understated. The marks carry their own brand colours;
+                   the files themselves are colour, so nothing but CSS was
+                   muting them. */
+                className="h-14 w-28 object-contain sm:h-20 sm:w-40 lg:h-24 lg:w-48"
               />
             </li>
           );

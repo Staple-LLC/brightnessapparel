@@ -152,6 +152,17 @@
     background: rgba(255, 255, 255, 0.9);
   }
 
+  /* Hides the scrollbar on a horizontal carousel that has its own controls.
+     The element stays a real scroll container — this only removes the bar. */
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
   .animate-marquee {
     animation: marquee 38s linear infinite;
   }
