@@ -40,8 +40,16 @@ export default function HomePage() {
           whole letters. Mobile: the crop leaves her filling the frame with
           only ~14px of clear band, so the line drops to the lower third and
           the occlusion layer is disabled entirely (see below). */}
+      {/* In normal flow below lg, absolute only from lg up.
+          It used to be absolute at top-[54%] at every size while the subline
+          and buttons were anchored to the bottom and grew upward — so on a
+          short viewport the two met and overlapped. A phone with browser
+          chrome is ~620px, not the 812px a bare emulator reports, and the
+          longer subline closed the remaining gap. Flow cannot overlap.
+          Absolute positioning is only needed at lg, where the headline has to
+          sit behind the model. */}
       <h1
-        className="absolute inset-x-0 top-[54%] z-[1] lg:bottom-0 lg:top-0 lg:flex lg:items-center"
+        className="relative z-[1] mt-auto lg:absolute lg:inset-x-0 lg:bottom-0 lg:top-0 lg:mt-0 lg:flex lg:items-center"
         style={{ fontFamily: "var(--font-display)" }}
       >
         {/* Desktop size and offsets are plate coordinates times --u (see
@@ -71,7 +79,11 @@ export default function HomePage() {
       {/* Layer 4 — anything that has to stay readable sits above the subject. */}
       {/* The eyebrow strapline is gone: it collided with the raised slogan and
           repeated what the subline already says. */}
-      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col justify-end px-6 pb-12 pt-28 sm:px-10 lg:px-16">
+      {/* flex-1 only from lg: below it the headline above takes the free space
+          via mt-auto, which is what stacks the two rather than letting them
+          overlap. pt is small on mobile for the same reason — it is now the
+          gap under the headline, not clearance for the nav. */}
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col justify-end px-6 pb-12 pt-6 sm:px-10 lg:flex-1 lg:px-16 lg:pt-28">
         {/* max-w-xl, not lg: the specular buttons carry more padding than the
             ones they replaced and the pair needs 527px, which wrapped inside
             the old 512px measure. The subline sets its own max-w-md, so this
