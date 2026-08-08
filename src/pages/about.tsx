@@ -179,10 +179,15 @@ export default function AboutPage() {
 
         {/* The drone loop rather than a photograph: "we have a factory" is the
             claim this section makes, and footage of the building is the most
-            direct evidence for it. Native 9:16, so the column is given that
-            aspect and the source is never cropped. */}
+            direct evidence for it.
+
+            aspect-[900/1418] is the file's real shape. It was delivered as
+            900x1600 with 91px of white padding top and bottom — exported from
+            a 9:16 timeline — so a 9:16 frame here reproduced those bars
+            exactly. The padding is cropped out of the source now and this
+            matches what is left, so nothing is letterboxed or cut. */}
         <div className="lg:col-span-5">
-          <FactoryVideo className="aspect-[9/16] max-h-[42rem] w-full bg-foreground/5 object-cover" />
+          <FactoryVideo className="aspect-[900/1418] max-h-[42rem] w-full bg-foreground/5 object-cover" />
         </div>
       </div>
 
