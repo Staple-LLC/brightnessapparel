@@ -6,7 +6,6 @@ import StudioPage from "@/pages/studio";
 import AboutPage from "@/pages/about";
 import ClientelePage from "@/pages/clientele";
 import OneStopPage from "@/pages/one-stop";
-import PrintingPage from "@/pages/printing";
 import ProcessPage from "@/pages/process";
 import ReelsPage from "@/pages/reels";
 
@@ -18,11 +17,10 @@ const CollectionPage = lazy(() => import("@/pages/collection"));
 const JournalPage = lazy(() => import("@/pages/journal"));
 const ArticlePage = lazy(() => import("@/pages/article"));
 const ReachUsPage = lazy(() => import("@/pages/reach-us"));
-/* Lazy for the same reason as the gallery: thirty swatches is weight that no
-   longer belongs in the home page's graph. */
+/* Lazy for the same reason as the gallery: reference material, carrying its
+   own photography, that no longer belongs in the home page's graph. */
 const FabricsPage = lazy(() => import("@/pages/fabrics"));
-/* TEMPORARY — the self-hosted vs embedded comparison. Delete with the page. */
-const ComparePage = lazy(() => import("@/pages/compare"));
+const PrintingPage = lazy(() => import("@/pages/printing"));
 
 /* What stays on the home page: the narrative run from hero through to how an
    order is placed, About included — the company story is short enough to read
@@ -39,7 +37,6 @@ function HomeRoute() {
       <AboutPage />
       <ClientelePage />
       <OneStopPage />
-      <PrintingPage />
       <ProcessPage />
       <ReelsPage />
     </>
@@ -86,14 +83,13 @@ export default function App() {
                 />
               }
             />
+            <Route path="/methods" element={<PrintingPage />} />
             <Route path="/materials" element={<FabricsPage />} />
             <Route path="/portfolio" element={<GalleryPage />} />
             <Route path="/portfolio/:slug" element={<CollectionPage />} />
             <Route path="/journal" element={<JournalPage />} />
             <Route path="/journal/:slug" element={<ArticlePage />} />
             <Route path="/contact" element={<ReachUsPage />} />
-            {/* TEMPORARY — delete with src/pages/compare.tsx */}
-            <Route path="/compare" element={<ComparePage />} />
           </Routes>
         </div>
       </Suspense>

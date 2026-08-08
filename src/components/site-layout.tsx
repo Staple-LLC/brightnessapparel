@@ -28,7 +28,7 @@ const NAV_LINKS: NavLink[] = [
   { label: "About", id: "about" },
   { label: "Services", id: "studio" },
   { label: "Solutions", id: "one-stop" },
-  { label: "Methods", id: "printing" },
+  { label: "Methods", to: "/methods" },
   { label: "Materials", to: "/materials" },
   { label: "Portfolio", to: "/portfolio" },
   { label: "Blog", to: "/journal" },
