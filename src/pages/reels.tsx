@@ -20,14 +20,16 @@ function ReelTile({ reel }: { reel: Reel }) {
     const sync = () => {
       frame = 0;
       const rect = video.getBoundingClientRect();
-      /* Both axes: the tile scrolls vertically with the page and horizontally
-         inside the rail, and a tile parked off the side of the rail should not
-         be playing either. */
+      /* Vertically against the viewport, horizontally against the rail. The
+         rail is narrower than the screen, so measuring both axes against the
+         viewport counts a tile that has been scrolled past the rail's edge —
+         and clipped out of sight — as visible, and keeps it downloading. */
+      const rail = video.closest("ul");
+      const bounds = rail ? rail.getBoundingClientRect() : null;
       const onScreen =
         rect.top < window.innerHeight &&
         rect.bottom > 0 &&
-        rect.left < window.innerWidth &&
-        rect.right > 0;
+        (!bounds || (rect.left < bounds.right && rect.right > bounds.left));
 
       if (still.matches || !onScreen) {
         if (!video.paused) video.pause();
@@ -152,7 +154,12 @@ export default function ReelsPage() {
           {REELS.map((reel) => (
             <li
               key={reel.stem}
-              className="relative w-44 shrink-0 snap-start overflow-hidden rounded-xl bg-background/[0.06] sm:w-52 lg:w-56"
+              /* last:snap-end is not decoration. Snap points sit at each tile's
+                 offset — 0, 192, 384 … 960 — but the rail only scrolls to 809,
+                 so the final tile's start-aligned snap point is past the end
+                 and mandatory snap can never rest on it. Aligning the last one
+                 to the end puts a snap point exactly at max scroll. */
+              className="relative w-44 shrink-0 snap-start overflow-hidden rounded-xl bg-background/[0.06] last:snap-end sm:w-52 lg:w-56"
             >
               <div className="aspect-[9/16]">
                 <ReelTile reel={reel} />
