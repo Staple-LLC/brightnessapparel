@@ -9,6 +9,27 @@
    Body content is structured blocks rather than markdown so it renders through
    the same type system as the rest of the site with no extra dependency. */
 
+/* Cover art, folder-driven: src/assets/journal/<slug>.webp. Nothing here needs
+   editing to add one — the filename is the link. See the README in that folder.
+
+   Optional by design. With no covers at all the listing renders exactly as it
+   did before; once any article has one, every row gets the column so they stay
+   aligned. */
+const covers = import.meta.glob(
+  "../assets/journal/*.{webp,jpg,jpeg,png,WEBP,JPG,JPEG,PNG}",
+  { eager: true, query: "?url", import: "default" }
+) as Record<string, string>;
+
+export function coverFor(slug: string) {
+  const key = Object.keys(covers).find(
+    (path) => path.split("/").pop()!.replace(/\.[^.]+$/, "") === slug
+  );
+  return key ? covers[key] : undefined;
+}
+
+/** Whether to reserve the image column at all. */
+export const HAS_COVERS = Object.keys(covers).length > 0;
+
 export type Block =
   | { type: "p"; text: string }
   | { type: "h"; text: string }

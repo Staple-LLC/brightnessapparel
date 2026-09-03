@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { Section, SectionHeading, Quiet } from "@/components/section";
-import { ARTICLES, getArticle, type Block } from "@/content/articles";
+import { ARTICLES, getArticle, type Block, coverFor } from "@/content/articles";
+import { CoverImage } from "@/components/cover-image";
 
 function renderBlock(block: Block, i: number) {
   switch (block.type) {
@@ -66,9 +67,19 @@ export default function ArticlePage() {
      somewhere to go rather than hitting a dead end. */
   const index = ARTICLES.findIndex((a) => a.slug === article.slug);
   const next = ARTICLES[(index + 1) % ARTICLES.length];
+  const cover = coverFor(article.slug);
 
   return (
     <Section id="journal-article" label="Blog" tone="light">
+      {/* Cover art leads, when there is any. Wider than the text measure
+          below — a hero that matched the 2xl reading column would read as an
+          inline figure rather than the top of the piece. */}
+      {cover && (
+        <div className="mb-12 aspect-[16/9] w-full overflow-hidden rounded-xl bg-foreground/[0.06]">
+          <CoverImage src={cover} eager />
+        </div>
+      )}
+
       {/* Constrained measure: the band's full width is far too wide to read
           comfortably at body size. */}
       <article className="max-w-2xl">

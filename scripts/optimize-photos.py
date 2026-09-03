@@ -34,7 +34,7 @@ def safe_name(name: str) -> str:
     return name
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DEFAULT_FOLDERS = ["process", "services", "printing", "instagram"]
+DEFAULT_FOLDERS = ["process", "services", "printing", "instagram", "journal"]
 WIDTH = 1000
 QUALITY = 82
 PATTERNS = ("*.jpg", "*.jpeg", "*.png", "*.JPG", "*.JPEG", "*.PNG")
