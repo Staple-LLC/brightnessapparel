@@ -1,11 +1,8 @@
 import { Section, SectionHeading, SectionLede, Quiet } from "@/components/section";
 
-const CONTACT_EMAIL = "hello@brightnessapparel.com";
+const CONTACT_EMAIL = "brightnessapparel100@gmail.com";
 
-/* PLACEHOLDER NUMBER — replace with the real business line. WhatsApp is now
-   the only way to start an enquiry, so nothing on this site reaches the client
-   until this is a working number. */
-const WHATSAPP_NUMBER = "60000000000";
+const WHATSAPP_NUMBER = "60167528300";
 
 /* The form used to collect these four things. Prefilling the message keeps
    that structure without a form to submit — the enquiry arrives already
