@@ -17,7 +17,11 @@ const WHATSAPP_TEMPLATE = [
 ].join("\n");
 
 const DETAILS: { label: string; value: string; href?: string }[] = [
-  { label: "Email", value: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}` },
+  {
+    label: "Email",
+    value: CONTACT_EMAIL,
+    href: `https://mail.google.com/mail/?view=cm&to=${CONTACT_EMAIL}`,
+  },
   { label: "Based in", value: "Malaysia — working with brands worldwide" },
   { label: "Minimums", value: "Discussed per garment and decoration method" },
 ];
