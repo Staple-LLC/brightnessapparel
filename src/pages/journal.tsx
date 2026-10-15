@@ -30,7 +30,7 @@ export default function JournalPage() {
                     a row of empty frames. */}
                 {HAS_COVERS && (
                   <div className="aspect-[3/2] overflow-hidden rounded-lg bg-foreground/[0.06] sm:col-span-3">
-                    {cover && <CoverImage src={cover} />}
+                    {cover && <CoverImage src={cover} preserve={article.preserveCover} />}
                   </div>
                 )}
 

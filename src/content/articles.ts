@@ -1,4 +1,6 @@
-/* Journal content.
+import { IMPORTED_ARTICLES } from "./imported-articles";
+
+/* Legacy journal content.
 
    DRAFTED FOR REVIEW — the manufacturing detail here is standard industry
    practice rather than anything specific to Brightness Apparel. Before
@@ -31,6 +33,7 @@ export function coverFor(slug: string) {
 export const HAS_COVERS = Object.keys(covers).length > 0;
 
 export type Block =
+  | { type: "image"; src: string; alt: string }
   | { type: "p"; text: string }
   | { type: "h"; text: string }
   | { type: "ul"; items: string[] }
@@ -44,10 +47,12 @@ export type Article = {
   category: string;
   excerpt: string;
   readingTime: string;
+  preserveCover?: boolean;
   body: Block[];
 };
 
 export const ARTICLES: Article[] = [
+  ...IMPORTED_ARTICLES,
   {
     slug: "sublimation-vs-silk-screen",
     title: "Choosing between sublimation and silk screen",

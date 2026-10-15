@@ -3,8 +3,24 @@ import { Section, SectionHeading, Quiet } from "@/components/section";
 import { ARTICLES, getArticle, type Block, coverFor } from "@/content/articles";
 import { CoverImage } from "@/components/cover-image";
 
+function renderText(text: string) {
+  return text.split(/(\*\*.*?\*\*)/g).map((part, i) =>
+    part.startsWith("**") && part.endsWith("**")
+      ? <strong key={i} className="font-semibold">{part.slice(2, -2)}</strong>
+      : part
+  );
+}
+
 function renderBlock(block: Block, i: number) {
   switch (block.type) {
+    case "image":
+      return (
+        <figure key={i} className="mt-8">
+          <a href={block.src} target="_blank" rel="noreferrer" aria-label={`View full-size image: ${block.alt}`}>
+            <img src={block.src} alt={block.alt} loading="lazy" decoding="async" className="h-auto w-full rounded-lg" />
+          </a>
+        </figure>
+      );
     case "h":
       return (
         <h2
@@ -20,7 +36,7 @@ function renderBlock(block: Block, i: number) {
         <ul key={i} className="mt-6 border-t rule">
           {block.items.map((item) => (
             <li key={item} className="dim border-b rule py-3 text-base leading-relaxed">
-              {item}
+              {renderText(item)}
             </li>
           ))}
         </ul>
@@ -31,13 +47,13 @@ function renderBlock(block: Block, i: number) {
           key={i}
           className="mt-8 border-l-2 border-[hsl(var(--brand))] py-1 pl-5 text-base leading-relaxed"
         >
-          {block.text}
+          {renderText(block.text)}
         </p>
       );
     default:
       return (
         <p key={i} className="dim mt-6 text-base leading-relaxed sm:text-lg">
-          {block.text}
+          {renderText(block.text)}
         </p>
       );
   }
@@ -74,7 +90,9 @@ export default function ArticlePage() {
       {/* Cover art leads, when there is any. Wider than the text measure
           below — a hero that matched the 2xl reading column would read as an
           inline figure rather than the top of the piece. */}
-      {cover && (
+      {cover && article.preserveCover ? (
+        <img src={cover} alt={article.title} className="mb-12 h-auto w-full rounded-xl" fetchPriority="high" />
+      ) : cover && (
         <div className="mb-12 aspect-[16/9] w-full overflow-hidden rounded-xl bg-foreground/[0.06]">
           <CoverImage src={cover} eager />
         </div>
@@ -96,9 +114,9 @@ export default function ArticlePage() {
           {article.title}
         </h1>
 
-        <p className="mt-6 border-b rule pb-10 text-lg leading-relaxed">
+        {!article.preserveCover && <p className="mt-6 border-b rule pb-10 text-lg leading-relaxed">
           {article.excerpt}
-        </p>
+        </p>}
 
         {article.body.map(renderBlock)}
       </article>

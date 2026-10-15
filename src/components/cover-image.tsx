@@ -24,9 +24,10 @@ type Props = {
   /* The article hero is the first thing in the band, so it opts out of lazy
      loading; listing thumbnails keep it. */
   eager?: boolean;
+  preserve?: boolean;
 };
 
-export function CoverImage({ src, className, eager }: Props) {
+export function CoverImage({ src, className, eager, preserve }: Props) {
   const [contain, setContain] = useState(false);
 
   return (
@@ -43,7 +44,7 @@ export function CoverImage({ src, className, eager }: Props) {
       }}
       className={cn(
         "h-full w-full",
-        contain ? "object-contain" : "object-cover",
+        contain || preserve ? "object-contain" : "object-cover",
         className,
       )}
     />
