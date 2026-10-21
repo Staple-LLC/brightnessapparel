@@ -7,6 +7,85 @@
                 "headlineStart": "Made to",
                 "primaryButton": "Discuss a Project",
                 "secondaryButton": "View Capabilities"
+            },
+            "hero_images": {
+                "background": "/cms-assets/e491c37ff4fa736c6e9a.webp",
+                "foreground": "/cms-assets/8033769b350fe63d7d6c.webp",
+                "backgroundAlt": "Model in technical apparel, captured with long-exposure motion blur"
+            }
+        },
+        "/about": {
+            "about": {
+                "details": [
+                    {
+                        "label": "Founded",
+                        "value": "1990"
+                    },
+                    {
+                        "label": "Based in",
+                        "value": "55-3, Jalan Ledang, Taman Bandar, Batu Pahat, Johor, Malaysia"
+                    },
+                    {
+                        "label": "Specialism",
+                        "value": "OEM apparel manufacturing"
+                    },
+                    {
+                        "label": "Serving",
+                        "value": "Events, corporates, retail labels"
+                    },
+                    {
+                        "label": "Production capacity",
+                        "value": "700,000+ units per year"
+                    }
+                ],
+                "headingEnd": "manufacturing partner.",
+                "headingStart": "Your",
+                "introduction": "Brightness Apparel is a modern OEM apparel manufacturing partner based in Malaysia, supporting event apparel, established brand production, and clothing brand development."
+            }
+        },
+        "/reels": {
+            "reels": {
+                "items": [
+                    {
+                        "id": "82527fa1-a407-42fe-b7bf-21b45b99da83",
+                        "video": "https://www.brightnessapparel.my/cms-assets/reels/e8d6550bda43d37d0ef9.mp4",
+                        "poster": "/cms-assets/reels/c394ed0de1e9f785cf9e.webp",
+                        "caption": ""
+                    },
+                    {
+                        "id": "baf13398-db45-4e94-953f-3715aeb154f6",
+                        "video": "https://www.brightnessapparel.my/cms-assets/reels/239df5f7cad8d82508a1.mp4",
+                        "poster": "/cms-assets/reels/d6ba5036d3506c5cd651.webp",
+                        "caption": ""
+                    },
+                    {
+                        "id": "47d10979-7977-499a-ad6f-4ba13517a0d7",
+                        "video": "https://www.brightnessapparel.my/cms-assets/reels/d6d426cbda3bc1d75a14.mp4",
+                        "poster": "/cms-assets/reels/1d3686b266f197d53703.webp",
+                        "caption": ""
+                    },
+                    {
+                        "id": "50260a9a-1f7b-498e-831d-2d3a84615283",
+                        "video": "https://www.brightnessapparel.my/cms-assets/reels/ff4432b34ad211b196cf.mp4",
+                        "poster": "/cms-assets/reels/d60c4c4efbc35c428221.webp",
+                        "caption": ""
+                    },
+                    {
+                        "id": "5741a7c6-cf2b-4a21-bdb5-e5a3b16d47f5",
+                        "video": "https://www.brightnessapparel.my/cms-assets/reels/eb2cfb637f9e8f4bf42c.mp4",
+                        "poster": "/cms-assets/reels/f6201c089afc8361ce37.webp",
+                        "caption": ""
+                    },
+                    {
+                        "id": "383442f3-99ff-4069-a09e-63293f0ad5a6",
+                        "video": "https://www.brightnessapparel.my/cms-assets/reels/50fc615d61f98ebf765c.mp4",
+                        "poster": "/cms-assets/reels/993a69e3a7b7b837d0b0.webp",
+                        "caption": ""
+                    }
+                ],
+                "headingEnd": "as it happens.",
+                "headingStart": "Off the floor,",
+                "introduction": "Production runs, samples, and finished garments as they leave the factory."
             }
         },
         "/contact": {
@@ -22,10 +101,1656 @@
                 "whatsappNumber": "60167528300",
                 "whatsappMessage": "Hi Brightness Apparel, I'd like to enquire about production.\n\nGarment:\nQuantity:\nTarget date:\nArtwork / reference:"
             }
+        },
+        "/journal": {
+            "blog": {
+                "posts": [
+                    {
+                        "id": "f9b6413f-5885-4e86-b512-c18cbd7ab5f1",
+                        "iso": "2026-10-15",
+                        "body": [
+                            {
+                                "text": "Choosing the right fabric is one of the most important decisions when producing a sports jersey. There is no single fabric that is best for every situation — the right choice depends on the sport, budget, desired outcome, stretch, breathability and overall look of the jersey.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "For most custom sublimation jerseys in Malaysia, commonly used fabrics include **Microfiber Eyelet, Microfiber Diamond and Polyester Interlock**. These options are popular because they provide a good balance of comfort, print quality and cost.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "For more premium or performance-focused jerseys, fabrics such as **Lycra Spandex and Ultra-Thin Jacquard** may be more suitable, especially when stretch, lightweight construction or a more premium feel is required.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "1. Microfiber Eyelet",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Microfiber Eyelet is a versatile and affordable choice for **running events, pickleball, badminton, uniforms and team jerseys**.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Its small ventilation holes improve airflow, while the fabric still feels comfortable and slightly firm. It is commonly available around **140–180gsm**.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Because it is widely produced and supplied, it is also one of the more cost-effective options for sublimation jerseys.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "2. Microfiber Diamond",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Microfiber Diamond has a **distinct diamond-textured surface** that gives jerseys a more sporty and structured appearance.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "It is lightweight and breathable, making it popular for **football, team jerseys and general sportswear**. Compared with Eyelet, it has a **firmer, slightly harder feel** and does not rely on visible ventilation holes for airflow.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "It is a good choice when you want a jersey that feels more structured while still remaining comfortable for active use.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "3. Microfiber Interlock",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Microfiber Interlock has a **smooth, soft double-knit structure** with a slightly more silky and structured hand feel.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "It offers **good colour reproduction**, is widely available and remains an affordable choice for **corporate sportswear, E-Sports and general event jerseys**.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Compared with Eyelet, it is usually **less breathable** because it does not have visible ventilation holes.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "4. Lycra Spandex",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Lycra Spandex offers **high stretchability, good shape retention and a soft premium feel**, making it comfortable for sports that require more body movement.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "It is especially suitable for **golf, gym wear, yoga and fitted activewear**, where stretch and comfort matter. The fabric also resists wrinkling well, but it generally comes at a **higher cost than standard microfiber fabrics**.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "5. Ultra-Thin Jacquard",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Ultra-Thin Jacquard is a **premium lightweight performance fabric, typically around 115gsm to 140gsm**, giving it a lighter and more technical feel than standard microfiber options.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "It has a **soft, cool touch** and a knitted texture that creates a more premium appearance. Its lightweight construction makes it suitable for **aerodynamic sportswear**, especially **marathon jerseys, running tops and running vests**.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Because of its lower GSM and more refined construction, it is generally priced higher than regular microfiber fabrics.",
+                                "type": "p"
+                            }
+                        ],
+                        "date": "15 Oct 2026",
+                        "slug": "best-fabric-for-sports-jerseys-in-malaysia",
+                        "cover": "/cms-journal/best-fabric-for-sports-jerseys-in-malaysia.webp",
+                        "title": "Best Fabric for Sports Jerseys in Malaysia",
+                        "status": "published",
+                        "excerpt": "Choosing the right fabric is one of the most important decisions when producing a sports jersey. There is no single fabric that is best for every situation — the right choice depends on the sport, budget, desired outcome, stretch, breathability and overall look of the jersey.",
+                        "category": "Materials",
+                        "coverAlt": "Best Fabric for Sports Jerseys in Malaysia",
+                        "readingTime": "3 min read",
+                        "preserveCover": true
+                    },
+                    {
+                        "id": "2c4330d4-8b6b-49ed-b531-eac781d01e07",
+                        "iso": "2026-10-15",
+                        "body": [
+                            {
+                                "text": "A custom sublimation jersey in Malaysia typically costs around **RM12–RM30 per piece**, depending on quantity, cutting, fabric and customisation.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "If you order directly from a manufacturer with its own production facility, the price can also be more competitive compared with ordering through a merchandising agency or printing shop that outsources production.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "At Brightness Apparel, our standard pricing below is based on a **round-neck, short-sleeve sublimation jersey**.",
+                                "type": "p"
+                            },
+                            {
+                                "alt": "How Much Does a Custom Sublimation Jersey Cost in Malaysia — pricing chart",
+                                "src": "/cms-journal/inline/custom-sublimation-jersey-cost-in-malaysia-2.webp",
+                                "type": "image"
+                            },
+                            {
+                                "text": "What Affects the Jersey Price?",
+                                "type": "h"
+                            },
+                            {
+                                "text": "1. Jersey Cutting",
+                                "type": "h"
+                            },
+                            {
+                                "text": "The prices above are based on a **standard round-neck short-sleeve jersey**.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Other constructions may cost more because they require additional fabric or workmanship.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "For example:",
+                                "type": "p"
+                            },
+                            {
+                                "type": "ul",
+                                "items": [
+                                    "Long sleeve — higher fabric consumption",
+                                    "Muslimah cutting — higher fabric consumption",
+                                    "More complex cutting — additional sewing and production work"
+                                ]
+                            },
+                            {
+                                "text": "2. Fabric Choice",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Common and more affordable sports jersey fabrics include:",
+                                "type": "p"
+                            },
+                            {
+                                "type": "ul",
+                                "items": [
+                                    "Microfiber Eyelet",
+                                    "Microfiber Diamond",
+                                    "Polyester Interlock"
+                                ]
+                            },
+                            {
+                                "text": "Higher-priced performance fabrics may include:",
+                                "type": "p"
+                            },
+                            {
+                                "type": "ul",
+                                "items": [
+                                    "Lycra Spandex",
+                                    "Ultra-thin Jacquard"
+                                ]
+                            },
+                            {
+                                "text": "The difference is not just appearance. Fabric can also affect **weight, breathability, stretch and overall wearing comfort**.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "3. Collar Style",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Different collars require different construction and workmanship.",
+                                "type": "p"
+                            },
+                            {
+                                "alt": "How Much Does a Custom Sublimation Jersey Cost in Malaysia — 3. Collar Style",
+                                "src": "/cms-journal/inline/custom-sublimation-jersey-cost-in-malaysia-3.webp",
+                                "type": "image"
+                            },
+                            {
+                                "alt": "How Much Does a Custom Sublimation Jersey Cost in Malaysia — 3. Collar Style",
+                                "src": "/cms-journal/inline/custom-sublimation-jersey-cost-in-malaysia-4.webp",
+                                "type": "image"
+                            },
+                            {
+                                "text": "Final pricing may vary depending on the actual design and craftsmanship required.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "4. Individual Name & Number",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Personalised names and numbers are generally around **+RM5.00 per jersey**.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "This is because each player’s artwork needs to be prepared individually, and personalised pieces must also be monitored carefully during bulk production to avoid mixing up names, numbers or sizes.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "5. Pockets & Special Features",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Simple additions such as pockets, printed size label, pen pocket usually add around **RM0.50–RM2.00 per piece**, depending on construction.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "6. Does Using More Colours or Complex Design Cost More?",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Generally, **no**. One of the main advantages of sublimation printing is that the artwork is printed digitally, so a design with two colours, multiple colours, gradients, patterns or full-colour graphics does not require a separate screen for each colour. Unlike silkscreen printing, adding more colours usually does not significantly increase the printing cost, which makes sublimation especially suitable for colourful and complex jersey designs.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "7. Artwork Preparation",
+                                "type": "h"
+                            },
+                            {
+                                "alt": "How Much Does a Custom Sublimation Jersey Cost in Malaysia — 7. Artwork Preparation",
+                                "src": "/cms-journal/inline/custom-sublimation-jersey-cost-in-malaysia-5.webp",
+                                "type": "image"
+                            },
+                            {
+                                "text": "Sublimation printing still requires **vectortized** **production-ready artwork** (**Adobe Illustrator, SVG, EPS).** Visual like **JPG, PNG, screenshots or AI-generated** images may not be suitable for direct printing if the quality is too low or the design cannot be scaled cleanly.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "In these cases, the artwork may need to be **redrawn or traced into a vector file** before production. Our typical artwork tracing fee is around **RM120**, depending on design complexity.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "8. Finally, What About Sampling?",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Sampling cost depends mainly on the complexity of the garment project.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "**Ready-made / existing cutting:**",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Around **RM50–RM70 per sample**",
+                                "type": "p"
+                            },
+                            {
+                                "text": "**New custom cutting:**",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Usually **RM200+**",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Custom cutting usually costs more because the manufacturer needs to prepare a new pattern and size specifications before producing the sample. Whereas, ready-made cutting sample is cheaper since it’s highly repeated production by factory with already available specifications.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Sampling is especially useful when the project involves a new cutting, unusual collar, custom sizing or a larger bulk order.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "At **Brightness Apparel**, we normally review the whole product before recommending the most suitable specification and price.",
+                                "type": "p"
+                            }
+                        ],
+                        "date": "15 Oct 2026",
+                        "slug": "custom-sublimation-jersey-cost-in-malaysia",
+                        "cover": "/cms-journal/custom-sublimation-jersey-cost-in-malaysia.webp",
+                        "title": "How Much Does a Custom Sublimation Jersey Cost in Malaysia?",
+                        "status": "published",
+                        "excerpt": "A custom sublimation jersey in Malaysia typically costs around RM12–RM30 per piece, depending on quantity, cutting, fabric and customisation.",
+                        "category": "Pricing",
+                        "coverAlt": "How Much Does a Custom Sublimation Jersey Cost in Malaysia?",
+                        "readingTime": "4 min read",
+                        "preserveCover": true
+                    },
+                    {
+                        "id": "21cc3b45-2261-48e0-af93-6b8964f544fc",
+                        "iso": "2026-10-15",
+                        "body": [
+                            {
+                                "text": "When making custom apparel, one of the first things to decide is the printing method.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "The three common options are **sublimation, DTF and silkscreen printing**.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Each method has its own strengths. Choosing the right printing method will elevate your product perceived value.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "1) Sublimation Printing",
+                                "type": "h"
+                            },
+                            {
+                                "alt": "Sublimation printer transferring jersey artwork onto fabric",
+                                "src": "/cms-journal/inline/sublimation-vs-dtf-vs-silkscreen-printing-2.webp",
+                                "type": "image"
+                            },
+                            {
+                                "text": "Sublimation is commonly used for **sports jerseys** and **performance apparel.**",
+                                "type": "p"
+                            },
+                            {
+                                "text": "The design is transferred into polyester fabric using heat. The colour becomes part of the fabric instead of sitting on top of it.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Another advantage is **design freedom.** A jersey can contain multiple colours, sponsor logos, patterns and individual player details without requiring a separate printing screen for each colour.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Sublimation is particularly suitable for:",
+                                "type": "p"
+                            },
+                            {
+                                "type": "ul",
+                                "items": [
+                                    "Sports and team jerseys",
+                                    "Running shirts",
+                                    "Pickleball jerseys",
+                                    "Tournament Jerseys",
+                                    "Gradients and complex designs",
+                                    "Individual names and numbers"
+                                ]
+                            },
+                            {
+                                "text": "However, sublimation is mainly suitable for **polyester or polyester-rich fabrics**, typically on a light base fabric.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "For a cotton T-shirt or a dark-coloured ready-made garment, another printing method is usually more appropriate.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "2) DTF Printing",
+                                "type": "h"
+                            },
+                            {
+                                "alt": "DTF transfer film being peeled from a printed T-shirt",
+                                "src": "/cms-journal/inline/sublimation-vs-dtf-vs-silkscreen-printing-3.webp",
+                                "type": "image"
+                            },
+                            {
+                                "text": "DTF, or **Direct-to-Film printing**, involves printing the artwork onto a special transfer film before heat-pressing it onto the garment.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Unlike sublimation, the print sits **on the surface of the fabric** rather than becoming part of it.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Its main advantage is versatility. DTF can work on cotton, polyester and many blended fabrics, making it useful for:",
+                                "type": "p"
+                            },
+                            {
+                                "type": "ul",
+                                "items": [
+                                    "Corporate T-shirts",
+                                    "Merchandise",
+                                    "Event apparel",
+                                    "Small production quantities",
+                                    "Multi-colour logos",
+                                    "Detailed artwork"
+                                ]
+                            },
+                            {
+                                "text": "For example, if you require **30 black cotton T-shirts with a detailed full-colour design**, DTF can be a practical option.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "It does not require separate screens for every colour, so it works well for smaller quantities and more complex artwork.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "How does DTF feel when worn?",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Because DTF sits on top of the fabric, the printed area has a slightly noticeable feel. Small to medium prints are usually comfortable, but very large prints can feel heavier and less breathable.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "How durable is DTF printing?",
+                                "type": "h"
+                            },
+                            {
+                                "text": "DTF is durable for regular wear, but heat, washing and friction can gradually affect the print. For longer-lasting results, wash inside out, avoid high heat and do not iron directly on the print.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "3) Silkscreen Printing",
+                                "type": "h"
+                            },
+                            {
+                                "alt": "Silkscreen printing press producing red event T-shirts",
+                                "src": "/cms-journal/inline/sublimation-vs-dtf-vs-silkscreen-printing-4.webp",
+                                "type": "image"
+                            },
+                            {
+                                "text": "Silkscreen printing is a traditional and widely used method for apparel production.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "A **stencil is created on a mesh screen**, and ink is pushed through the open areas using a **squeegee** onto the garment. Each colour normally requires its own screen, so the artwork is printed layer by layer.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Its main strength is efficiency and durability at higher quantities.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "After printing, the ink is **properly cured using heat**, which helps the print bond to the fabric and improves wash durability.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "For example, if a company requires **500 T-shirts with a simple one- or two-colour logo**, silkscreen printing can be a efficient and lower cost option.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Design limitations",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Each additional colour also requires another screen and setup. In normal apparel production, designs are often kept to **fewer than around 8 colours** to keep production practical and cost-efficient. Photographic gradient colour is not supported too.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Special printing effects",
+                                "type": "h"
+                            },
+                            {
+                                "text": "One major advantage of silkscreen printing is its ability to host special finishes such as:",
+                                "type": "p"
+                            },
+                            {
+                                "type": "ul",
+                                "items": [
+                                    "Puff printing",
+                                    "High-density printing",
+                                    "Glitter printing",
+                                    "Metallic effects",
+                                    "Rubberised prints"
+                                ]
+                            }
+                        ],
+                        "date": "15 Oct 2026",
+                        "slug": "sublimation-vs-dtf-vs-silkscreen-printing",
+                        "cover": "/cms-journal/sublimation-vs-dtf-vs-silkscreen-printing.webp",
+                        "title": "Sublimation vs DTF vs Silkscreen Printing: Which Is Best for Custom Apparel?",
+                        "status": "published",
+                        "excerpt": "When making custom apparel, one of the first things to decide is the printing method.",
+                        "category": "Guides",
+                        "coverAlt": "Sublimation vs DTF vs Silkscreen Printing: Which Is Best for Custom Apparel?",
+                        "readingTime": "4 min read",
+                        "preserveCover": true
+                    },
+                    {
+                        "id": "4759d950-adfc-4a1f-8498-dacd34f8416e",
+                        "iso": "2026-06-12",
+                        "body": [
+                            {
+                                "text": "Most decoration decisions come down to three questions: what is the garment made of, how many colours are in the artwork, and how many pieces are you making. Answer those honestly and the method usually picks itself.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Start with the fabric",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Sublimation is a chemical process, not a coating. Under heat the dye turns to gas and bonds with polyester fibres, becoming part of the fabric rather than sitting on top of it. That is why a sublimated jersey never cracks or peels, and why it will not work on cotton — there is nothing in a cotton fibre for the dye to bond to.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Silk screen is the opposite: ink pushed through a mesh stencil and cured onto the surface. It works on cotton, polyester, and blends, which makes it the more flexible option when the fabric is already decided.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "If the garment is 100% cotton, sublimation is off the table before you get to any other question.",
+                                "type": "note"
+                            },
+                            {
+                                "text": "Then count the colours",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Silk screen prices per colour, because each one needs its own screen, its own setup, and its own pass. A two-colour chest print is inexpensive. A photographic gradient is not — it may need six or seven screens and still not resolve cleanly.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Sublimation does not care. A full-coverage design with a hundred colours costs the same as a single-colour one, because it is one transfer either way. Anything with photographic imagery, gradients, or all-over panels points to sublimation.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Finally, the quantity",
+                                "type": "h"
+                            },
+                            {
+                                "type": "ul",
+                                "items": [
+                                    "Silk screen carries a fixed setup cost per colour, so unit price falls sharply as volume rises. It is usually the cheapest option at scale for simple artwork.",
+                                    "Sublimation has almost no setup, so the per-unit price stays flat. That makes it the better economics on small runs, and the only sane choice when every piece is different — names and numbers, for instance.",
+                                    "For short runs on cotton, DTF or DTG will often beat silk screen once the colour count climbs, because neither needs screens."
+                                ]
+                            },
+                            {
+                                "text": "A rough rule",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Polyester with complex artwork: sublimation. Cotton with one to three colours at volume: silk screen. Cotton with complex artwork or a short run: DTF or DTG. Mixed fabrics across one order: DTF, because it is the one method that behaves consistently on all of them.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "If you are unsure, send the artwork and the garment reference together. The two decide each other, and it is much cheaper to change method before sampling than after.",
+                                "type": "p"
+                            }
+                        ],
+                        "date": "12 Jun 2026",
+                        "slug": "sublimation-vs-silk-screen",
+                        "cover": "/cms-journal/sublimation-vs-silk-screen.webp",
+                        "title": "Choosing between sublimation and silk screen",
+                        "status": "published",
+                        "excerpt": "How fabric type, colour count, and order quantity decide which decoration method gives you the best result.",
+                        "category": "Guides",
+                        "coverAlt": "Choosing between sublimation and silk screen",
+                        "readingTime": "4 min read"
+                    },
+                    {
+                        "id": "321fb46d-7607-416c-a9d6-cd8bde283cd1",
+                        "iso": "2026-05-28",
+                        "body": [
+                            {
+                                "text": "A sample is not a preview. It is the reference every piece in the bulk run gets measured against, which makes the approval the single most consequential decision in the whole order.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "What you receive",
+                                "type": "h"
+                            },
+                            {
+                                "text": "A first sample is usually made in one size — commonly M — in the actual fabric, with the actual decoration method, sewn on the same machines the bulk will run on. Where a fabric or trim is not yet available, a substitute may stand in, and that substitution should be stated rather than discovered.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "What to check, in order",
+                                "type": "h"
+                            },
+                            {
+                                "type": "ul",
+                                "items": [
+                                    "Measurements against the spec sheet, not against how it feels. Chest, length, sleeve, shoulder. A garment can fit well and still be off-spec, which becomes a problem when you grade it across sizes.",
+                                    "Colour under daylight, not office lighting. Screens and fluorescents both lie. If colour is critical, ask for a lab dip or a Pantone reference rather than approving from a photograph.",
+                                    "Decoration placement and size. Measure from the shoulder seam, not by eye.",
+                                    "Construction: seam type, stitch density, whether the neckband is taped, how the hem is finished.",
+                                    "Fabric hand and weight. This is your last chance to say it feels too thin."
+                                ]
+                            },
+                            {
+                                "text": "Cheap to change now, expensive later",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Before bulk, almost everything is adjustable: measurements, print position and scale, thread colour, label type and placement, packing method. These cost a revision round and some time.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "After cutting has started, the list shortens dramatically. Fabric and colour are effectively fixed, because the material has been bought and cut. Changing them means starting again.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "The most expensive sentence in apparel manufacturing is \"can we just change the fabric?\" said after cutting.",
+                                "type": "note"
+                            },
+                            {
+                                "text": "How many rounds is normal",
+                                "type": "h"
+                            },
+                            {
+                                "text": "One or two. A first sample plus one revision covers most straightforward garments. Three or more usually signals that the original spec was underdefined rather than that anything is going wrong — which is worth recognising early, because each round adds real time.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Approve in writing, with the measurements attached. A verbal yes is not something either side can check against later.",
+                                "type": "p"
+                            }
+                        ],
+                        "date": "28 May 2026",
+                        "slug": "what-happens-in-a-sampling-round",
+                        "cover": "/cms-journal/what-happens-in-a-sampling-round.webp",
+                        "title": "What actually happens in a sampling round",
+                        "status": "published",
+                        "excerpt": "A walkthrough of what to check on your first sample, and the changes that are cheap to make before bulk.",
+                        "category": "Production",
+                        "coverAlt": "What actually happens in a sampling round",
+                        "readingTime": "5 min read"
+                    },
+                    {
+                        "id": "e2c4579e-bf37-4aad-b2cd-f2359f28fb70",
+                        "iso": "2026-05-09",
+                        "body": [
+                            {
+                                "text": "GSM stands for grams per square metre. It is a density measure, not a thickness one, and it is the single most useful number for predicting how a garment will feel before you can hold it.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Typical ranges",
+                                "type": "h"
+                            },
+                            {
+                                "type": "ul",
+                                "items": [
+                                    "120–150 GSM — lightweight tees and performance jerseys. Breathable, quick-drying, and near the edge of being see-through in pale colours.",
+                                    "160–190 GSM — the standard retail t-shirt. Enough body to hang properly without being warm.",
+                                    "200–240 GSM — heavyweight tees and lighter sweatshirts. This is the range most streetwear brands mean when they say heavyweight.",
+                                    "280–350 GSM — hoodies and full-weight fleece. Substantial, warm, and noticeably more expensive to ship.",
+                                    "400 GSM and above — outerwear and premium heavyweight pieces."
+                                ]
+                            },
+                            {
+                                "text": "What the number does not tell you",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Two fabrics at the same GSM can feel completely different. Construction matters as much as weight: a 180 GSM slub knit drapes loosely, while a 180 GSM interlock feels firm and structured. Fibre matters too — cotton at 200 GSM sits heavier on the body than polyester at the same weight.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "GSM tells you density. Knit structure tells you drape. Ask for both, and ask for a swatch.",
+                                "type": "note"
+                            },
+                            {
+                                "text": "The trade-offs to plan around",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Heavier fabric reads as higher quality to most buyers, holds shape better, and hides construction flaws. It also costs more per metre, costs more to ship, takes longer to dry, and is uncomfortable in humid climates — a genuine consideration for garments worn in South East Asia.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Lighter fabric is cheaper and more comfortable in heat, but shows sloppy seams, can be transparent in white and pastels, and tends to lose shape faster through repeated washing.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "A practical approach",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Decide how the garment will actually be worn before choosing a weight. A race jersey and a retail hoodie sit at opposite ends of this scale for good reason. Then ask for swatches at two adjacent weights and handle both — the difference between 180 and 200 GSM is obvious in the hand and invisible on a spec sheet.",
+                                "type": "p"
+                            }
+                        ],
+                        "date": "09 May 2026",
+                        "slug": "fabric-weights-explained",
+                        "cover": "/cms-journal/fabric-weights-explained.webp",
+                        "title": "Fabric weights, explained in plain terms",
+                        "status": "published",
+                        "excerpt": "GSM, hand feel, and drape — what the numbers mean and how they translate into a finished garment.",
+                        "category": "Materials",
+                        "coverAlt": "Fabric weights, explained in plain terms",
+                        "readingTime": "4 min read"
+                    },
+                    {
+                        "id": "d0881ebd-2625-4a1a-805b-061214d10bdf",
+                        "iso": "2026-04-21",
+                        "body": [
+                            {
+                                "text": "First runs go wrong in predictable ways, and almost all of them trace back to decisions made before anything was cut. A little planning here is worth more than any amount of problem-solving later.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Fewer styles, more depth",
+                                "type": "h"
+                            },
+                            {
+                                "text": "The most common first-run mistake is launching six styles in four colourways. That is twenty-four variants, each needing its own minimum, and it spreads a small budget so thin that nothing is available in the sizes people actually want.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Two or three styles in one or two colourways will teach you more, cost less, and leave you with stock you can actually sell through.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Sizing curves",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Do not split sizes evenly. A flat distribution across S to XXL leaves you with unsold ends and sold-out middles. A more realistic starting curve for adult unisex apparel looks roughly like this:",
+                                "type": "p"
+                            },
+                            {
+                                "type": "ul",
+                                "items": [
+                                    "S — 15%",
+                                    "M — 30%",
+                                    "L — 30%",
+                                    "XL — 18%",
+                                    "XXL — 7%"
+                                ]
+                            },
+                            {
+                                "text": "Adjust it to your market rather than treating it as fixed. Womenswear skews smaller, workwear and team apparel skew larger, and regional differences are significant.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Understand what the minimum applies to",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Minimum order quantity is usually quoted per style per colour, not per order. A 100-piece MOQ across two colours means 200 pieces, not 100 split between them. Fabric minimums can apply separately again, since fabric is bought by the roll.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Ask explicitly: is the MOQ per order, per style, or per style per colour? The answer changes your budget by multiples.",
+                                "type": "note"
+                            },
+                            {
+                                "text": "Where the budget actually goes",
+                                "type": "h"
+                            },
+                            {
+                                "text": "New labels routinely budget for garments and forget everything around them. Beyond the unit cost, plan for sampling (usually charged, sometimes credited against bulk), labels and hangtags, packaging, shipping and duties, and a contingency for a second sampling round.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "A useful discipline is to hold back roughly a fifth of the total budget until the sample is approved. Something almost always needs adjusting, and having the room to fix it properly is the difference between a good first run and a compromised one.",
+                                "type": "p"
+                            },
+                            {
+                                "text": "Build in more time than feels necessary",
+                                "type": "h"
+                            },
+                            {
+                                "text": "Sampling, revision, approval, fabric sourcing, production, and finishing each take real time, and they run in sequence rather than in parallel. Working backwards from a launch date is the right instinct; assuming each stage takes the minimum is not.",
+                                "type": "p"
+                            }
+                        ],
+                        "date": "21 Apr 2026",
+                        "slug": "planning-a-first-apparel-run",
+                        "cover": "/cms-journal/planning-a-first-apparel-run.webp",
+                        "title": "Planning a first apparel run as a new label",
+                        "status": "published",
+                        "excerpt": "Sizing curves, quantity splits, and the budget decisions that matter most on a debut collection.",
+                        "category": "Brand Building",
+                        "coverAlt": "Planning a first apparel run as a new label",
+                        "readingTime": "6 min read"
+                    }
+                ]
+            }
+        },
+        "/methods": {
+            "methods": {
+                "items": [
+                    {
+                        "best": "Full-coverage polyester",
+                        "slug": "sublimation",
+                        "image": "/cms-assets/printing/52dcfb8f25ca92d173b8.webp",
+                        "title": "Sublimation Printing",
+                        "number": "01",
+                        "imageAlt": "Sublimation Printing",
+                        "description": "Dye bonds into the fibre, so the print does not crack or peel. Ideal for all-over jersey graphics and panel designs."
+                    },
+                    {
+                        "best": "High volume, solid colour",
+                        "slug": "silk-screen",
+                        "image": "/cms-assets/printing/8bd1f5df69f80f9cbfb0.webp",
+                        "title": "Silk Screen Printing",
+                        "number": "02",
+                        "imageAlt": "Silk Screen Printing",
+                        "description": "Durable, cost-effective ink coverage for bold designs with a limited colour count. Best value at larger quantities."
+                    },
+                    {
+                        "best": "Logos and uniforms",
+                        "slug": "embroidery",
+                        "image": "/cms-assets/printing/b81606b1e68e84f56406.webp",
+                        "title": "Embroidery",
+                        "number": "03",
+                        "imageAlt": "Embroidery",
+                        "description": "Stitched thread for a premium, hard-wearing finish on polos, caps, jackets, and corporate wear."
+                    },
+                    {
+                        "best": "Mixed fabrics, small runs",
+                        "slug": "dtf",
+                        "image": "/cms-assets/printing/70446f7273820311f515.webp",
+                        "title": "DTF Printing",
+                        "number": "04",
+                        "imageAlt": "DTF Printing",
+                        "description": "Direct-to-film transfers that hold fine detail and full colour on both cotton and synthetic blends."
+                    },
+                    {
+                        "best": "Cotton, photographic detail",
+                        "slug": "dtg",
+                        "image": "/cms-assets/printing/f7bf3702fa80bc389ecb.webp",
+                        "title": "DTG Printing",
+                        "number": "05",
+                        "imageAlt": "DTG Printing",
+                        "description": "Ink printed straight into cotton fibres for soft-handed, high-detail artwork without a minimum colour count."
+                    },
+                    {
+                        "best": "Names and numbers",
+                        "slug": "heat-transfer-vinyl",
+                        "image": "/cms-assets/printing/d09bc84a14213ec4b5cb.webp",
+                        "title": "Heat Transfer Vinyl",
+                        "number": "06",
+                        "imageAlt": "Heat Transfer Vinyl",
+                        "description": "Cut vinyl applied under heat for team names, squad numbers, and short-notice personalisation."
+                    }
+                ],
+                "headingEnd": "matched to the garment.",
+                "headingStart": "Decoration methods,",
+                "introduction": "The right method depends on fabric, artwork, and quantity. We will recommend the one that holds up best for what you are producing."
+            }
+        },
+        "/process": {
+            "process": {
+                "steps": [
+                    {
+                        "title": "Send your brief",
+                        "detail": "Garment type, quantity, target date, and any reference artwork.",
+                        "number": "01"
+                    },
+                    {
+                        "title": "Quotation",
+                        "detail": "Costing against fabric, decoration method, and order quantity.",
+                        "number": "02"
+                    },
+                    {
+                        "title": "Sample & approval",
+                        "detail": "A physical sample to sign off on fit, colour, and construction.",
+                        "number": "03"
+                    },
+                    {
+                        "title": "Deposit & scheduling",
+                        "detail": "Production slot confirmed once the sample and deposit are settled.",
+                        "number": "04"
+                    },
+                    {
+                        "title": "Bulk production",
+                        "detail": "Cutting, sewing, decoration, labelling, and pressing.",
+                        "number": "05"
+                    },
+                    {
+                        "title": "QC & delivery",
+                        "detail": "Inspected against the approved sample, then packed and dispatched.",
+                        "number": "06"
+                    }
+                ],
+                "headingEnd": "to delivery.",
+                "headingStart": "From brief",
+                "introduction": "Six steps, with a clear decision point at each one. Nothing moves to bulk until you have approved a physical sample."
+            }
+        },
+        "/services": {
+            "services": {
+                "items": [
+                    {
+                        "slug": "event-apparel",
+                        "image": "/cms-assets/services/f21ebdf5c7086d9e2da7.webp",
+                        "title": "Event Apparel",
+                        "accent": "#a855f7",
+                        "number": "01",
+                        "imageAlt": "Event Apparel",
+                        "description": "Sublimation jerseys, marathon jerseys, and corporate uniforms produced for teams, races, events, and organizations."
+                    },
+                    {
+                        "slug": "custom-uniform-solution",
+                        "image": "/cms-assets/services/6e64583097c45c07a38d.webp",
+                        "title": "Custom Uniform Solution",
+                        "accent": "#3b82f6",
+                        "number": "02",
+                        "imageAlt": "Custom Uniform Solution",
+                        "description": "A dependable OEM production partner for established apparel brands that need consistent quality, timelines, and scale."
+                    },
+                    {
+                        "slug": "premium-streetwear",
+                        "image": "/cms-assets/services/b482fd110c57d53185f1.webp",
+                        "title": "Premium Streetwear",
+                        "accent": "#2dd4bf",
+                        "number": "03",
+                        "imageAlt": "Premium Streetwear",
+                        "description": "High-quality streetwear essentials manufactured with attention to fabric, fit, and finishing."
+                    },
+                    {
+                        "slug": "clothing-brand-development",
+                        "image": "/cms-assets/services/94300be26ea7ebcd9fe2.webp",
+                        "title": "Clothing Brand Development",
+                        "accent": "hsl(var(--brand))",
+                        "number": "04",
+                        "imageAlt": "Clothing Brand Development",
+                        "description": "Support for new labels moving from concept to finished garments, including product planning and manufacturing guidance."
+                    }
+                ],
+                "buttonText": "Start an Order",
+                "headingEnd": "movement and scale.",
+                "headingStart": "Made for",
+                "introduction": "From event-ready jerseys to brand manufacturing programs, we turn apparel requirements into clean samples, dependable production, and finished pieces that are ready to wear."
+            }
+        },
+        "/clientele": {
+            "clientele": {
+                "logos": [
+                    {
+                        "name": "Anakku",
+                        "image": "/cms-assets/logos/9abe139d3158b8f3a5e4.webp"
+                    },
+                    {
+                        "name": "Bebe",
+                        "image": "/cms-assets/logos/0a12193b277c4df37426.webp"
+                    },
+                    {
+                        "name": "Bird",
+                        "image": "/cms-assets/logos/76e2c10eb224d4410dbf.webp"
+                    },
+                    {
+                        "name": "Cheetah",
+                        "image": "/cms-assets/logos/cb79bb3acdd73d506df0.webp"
+                    },
+                    {
+                        "name": "Hub",
+                        "image": "/cms-assets/logos/bd04838255fbb985114f.webp"
+                    },
+                    {
+                        "name": "Hush",
+                        "image": "/cms-assets/logos/7b4cd1367c0d9f5e9d1b.webp"
+                    },
+                    {
+                        "name": "Kawasaki",
+                        "image": "/cms-assets/logos/50e178785c88a0c6eb43.webp"
+                    },
+                    {
+                        "name": "Lotus",
+                        "image": "/cms-assets/logos/09d4e81a8495f21fa48c.webp"
+                    },
+                    {
+                        "name": "Metrojaya",
+                        "image": "/cms-assets/logos/f3ef43c2fc0049f3f5c9.webp"
+                    },
+                    {
+                        "name": "Mydin",
+                        "image": "/cms-assets/logos/2c3c7aa05fadac5a2055.webp"
+                    },
+                    {
+                        "name": "Okbb",
+                        "image": "/cms-assets/logos/8f756290ae63470f45c4.webp"
+                    },
+                    {
+                        "name": "Pmc",
+                        "image": "/cms-assets/logos/0414ef25de3ec8e7d686.webp"
+                    },
+                    {
+                        "name": "Pureen",
+                        "image": "/cms-assets/logos/d9c871e61834eb40d2b9.webp"
+                    },
+                    {
+                        "name": "River",
+                        "image": "/cms-assets/logos/33d418f2af5476df7944.webp"
+                    },
+                    {
+                        "name": "Safari",
+                        "image": "/cms-assets/logos/4674084182f50f889fec.webp"
+                    },
+                    {
+                        "name": "Snails",
+                        "image": "/cms-assets/logos/1e65a5932324e38d1d34.webp"
+                    },
+                    {
+                        "name": "Tesco",
+                        "image": "/cms-assets/logos/c5f3bae9c96c8c347476.webp"
+                    },
+                    {
+                        "name": "Tm",
+                        "image": "/cms-assets/logos/008ab5b4af8787188113.webp"
+                    },
+                    {
+                        "name": "Tolly",
+                        "image": "/cms-assets/logos/070ec0c57225023f7ef9.webp"
+                    },
+                    {
+                        "name": "Tribe",
+                        "image": "/cms-assets/logos/576ee04e06774c187c5e.webp"
+                    },
+                    {
+                        "name": "Zoo",
+                        "image": "/cms-assets/logos/a44923d90badc92c1abf.webp"
+                    },
+                    {
+                        "name": "Zus",
+                        "image": "/cms-assets/logos/2f639614565d739e83b3.webp"
+                    }
+                ],
+                "segments": [
+                    {
+                        "label": "Event organizers",
+                        "detail": "Running, Soccer, Pickleball, Tournament & Event Merchandises"
+                    },
+                    {
+                        "label": "Corporate teams",
+                        "detail": "Corporate Uniforms, Staff Polos, Company Tees & Workwear"
+                    },
+                    {
+                        "label": "Clothing brands",
+                        "detail": "Streetwear, Private Label, OEM Production & Repeat Runs"
+                    },
+                    {
+                        "label": "New labels",
+                        "detail": "First Collections, Sampling, Small Batch & Brand Development"
+                    }
+                ],
+                "headingEnd": "that need it right.",
+                "headingStart": "Trusted by teams",
+                "introduction": "We produce for organizers, corporate groups, and apparel labels across Malaysia and the wider region."
+            }
+        },
+        "/materials": {
+            "materials": {
+                "items": [
+                    {
+                        "id": "d4d3d714-2cfe-4e12-95eb-f985c6080da2",
+                        "name": "Air Micro Pique",
+                        "image": "/cms-assets/fabric/38e4fdc87b218ab4de69.webp",
+                        "weight": "190GSM",
+                        "category": "pique",
+                        "imageAlt": "Air Micro Pique fabric swatch"
+                    },
+                    {
+                        "id": "bed134a3-96ef-4b4d-85ce-4d539c649346",
+                        "name": "Airism Performance Dual Layer Cotton",
+                        "image": "/cms-assets/fabric/f6d19057b01efb298549.webp",
+                        "weight": "240GSM",
+                        "category": "cotton",
+                        "imageAlt": "Airism Performance Dual Layer Cotton fabric swatch"
+                    },
+                    {
+                        "id": "2f51d13b-f2d0-4006-84c8-f3c5977a8ca5",
+                        "name": "All Over Printed Cotton",
+                        "image": "/cms-assets/fabric/146381a71a97aa9320f9.webp",
+                        "weight": "",
+                        "category": "cotton",
+                        "imageAlt": "All Over Printed Cotton fabric swatch"
+                    },
+                    {
+                        "id": "688f049c-150f-4e66-8707-9d9a0eed58ee",
+                        "name": "Baseball/Basketball Mesh Microfiber",
+                        "image": "/cms-assets/fabric/eb3e08a71fcf28260d9f.webp",
+                        "weight": "155GSM, 190GSM",
+                        "category": "microfiber",
+                        "imageAlt": "Baseball/Basketball Mesh Microfiber fabric swatch"
+                    },
+                    {
+                        "id": "0893f4d3-01fe-4b88-bb98-ccbf0fe2971f",
+                        "name": "CamoPro (Cloud) Microfiber",
+                        "image": "/cms-assets/fabric/6d9c3d419b49585e00ea.webp",
+                        "weight": "",
+                        "category": "microfiber",
+                        "imageAlt": "CamoPro (Cloud) Microfiber fabric swatch"
+                    },
+                    {
+                        "id": "ddabb3e2-ff6e-4f96-9a82-ed81b5d0423a",
+                        "name": "Computer Jacquard FIFA Fabric 01",
+                        "image": "/cms-assets/fabric/a192c8069b0e9c7b8b53.webp",
+                        "weight": "",
+                        "category": "other",
+                        "imageAlt": "Computer Jacquard FIFA Fabric 01 fabric swatch"
+                    },
+                    {
+                        "id": "448bc1c5-5309-4424-8de6-1da045d08311",
+                        "name": "Computer Jacquard FIFA Fabric 02",
+                        "image": "/cms-assets/fabric/cc4602a79aacf4dad211.webp",
+                        "weight": "",
+                        "category": "other",
+                        "imageAlt": "Computer Jacquard FIFA Fabric 02 fabric swatch"
+                    },
+                    {
+                        "id": "9ba7321e-b551-4bdc-addb-7f6ef13f6521",
+                        "name": "Computer Jacquard FIFA Fabric 03",
+                        "image": "/cms-assets/fabric/0adeb6f30a822c228d02.webp",
+                        "weight": "",
+                        "category": "other",
+                        "imageAlt": "Computer Jacquard FIFA Fabric 03 fabric swatch"
+                    },
+                    {
+                        "id": "a7058cd7-0bfb-40b5-bc46-e83d61d15ca8",
+                        "name": "Computer Jacquard FIFA Fabric 04",
+                        "image": "/cms-assets/fabric/ae36abf07c06d35b3da6.webp",
+                        "weight": "",
+                        "category": "other",
+                        "imageAlt": "Computer Jacquard FIFA Fabric 04 fabric swatch"
+                    },
+                    {
+                        "id": "58954600-521b-4ce4-b8db-6b0be066b319",
+                        "name": "Cotton Feel Mesh Microfiber",
+                        "image": "/cms-assets/fabric/e7eea4d5ab773352437e.webp",
+                        "weight": "150GSM",
+                        "category": "microfiber",
+                        "imageAlt": "Cotton Feel Mesh Microfiber fabric swatch"
+                    },
+                    {
+                        "id": "98226ede-b7e4-49da-8863-86473e0a1a2b",
+                        "name": "Cotton Feel Microfiber",
+                        "image": "/cms-assets/fabric/a4346b92cbf2b005a246.webp",
+                        "weight": "160GSM",
+                        "category": "microfiber",
+                        "imageAlt": "Cotton Feel Microfiber fabric swatch"
+                    },
+                    {
+                        "id": "dda0d1f2-c767-4e92-a8d6-704a475f3567",
+                        "name": "Cotton Fleece",
+                        "image": "/cms-assets/fabric/9d564fe123fa7ace6f32.webp",
+                        "weight": "",
+                        "category": "cotton",
+                        "imageAlt": "Cotton Fleece fabric swatch"
+                    },
+                    {
+                        "id": "f704bd94-9a70-4c20-ae33-947fd20b342c",
+                        "name": "CVC SINGLE JERSEY (60% Cotton 40% Polyester)",
+                        "image": "/cms-assets/fabric/6e82b1827b202bd59ec4.webp",
+                        "weight": "",
+                        "category": "cotton",
+                        "imageAlt": "CVC SINGLE JERSEY (60% Cotton 40% Polyester) fabric swatch"
+                    },
+                    {
+                        "id": "c125b75a-b1f7-4722-ab90-70bb23b55c0d",
+                        "name": "Diamond Mesh Microfiber",
+                        "image": "/cms-assets/fabric/4bd64b2187da53a222aa.webp",
+                        "weight": "135GSM",
+                        "category": "microfiber",
+                        "imageAlt": "Diamond Mesh Microfiber fabric swatch"
+                    },
+                    {
+                        "id": "fd3122a6-c0d4-4e5b-b109-75a65d0201e2",
+                        "name": "Diamond Microfiber",
+                        "image": "/cms-assets/fabric/2ecd1692f27d3c747656.webp",
+                        "weight": "160GSM",
+                        "category": "microfiber",
+                        "imageAlt": "Diamond Microfiber fabric swatch"
+                    },
+                    {
+                        "id": "02eb0d58-8f0f-43fa-8a41-44c67f7f3a33",
+                        "name": "Enzymed Washed Cotton Interlock",
+                        "image": "/cms-assets/fabric/92c9d3d504a95bfb3274.webp",
+                        "weight": "230GSM",
+                        "category": "cotton",
+                        "imageAlt": "Enzymed Washed Cotton Interlock fabric swatch"
+                    },
+                    {
+                        "id": "fe950f8a-0af5-49fd-b129-faa420a988a7",
+                        "name": "French Terry Cotton",
+                        "image": "/cms-assets/fabric/64cb7b50b8a7b723b4d8.webp",
+                        "weight": "",
+                        "category": "cotton",
+                        "imageAlt": "French Terry Cotton fabric swatch"
+                    },
+                    {
+                        "id": "29d972a7-fa7e-4ce3-af16-4479f8abd720",
+                        "name": "FULLY COTTON SINGLE JERSEY",
+                        "image": "/cms-assets/fabric/4ec1f27653ee33b59de8.webp",
+                        "weight": "",
+                        "category": "cotton",
+                        "imageAlt": "FULLY COTTON SINGLE JERSEY fabric swatch"
+                    },
+                    {
+                        "id": "4ab50f33-f95c-45fc-9fd1-844c65f9af3c",
+                        "name": "Hexagon V2 Microfiber",
+                        "image": "/cms-assets/fabric/ac4702d7e5d079ff4ddb.webp",
+                        "weight": "160GSM",
+                        "category": "microfiber",
+                        "imageAlt": "Hexagon V2 Microfiber fabric swatch"
+                    },
+                    {
+                        "id": "4de01321-57e1-4679-94fa-0c714ba4c4fe",
+                        "name": "Infant wear bird eye cotton mesh",
+                        "image": "/cms-assets/fabric/d9e6dea941bec752d2db.avif",
+                        "weight": "",
+                        "category": "cotton",
+                        "imageAlt": "Infant wear bird eye cotton mesh fabric swatch"
+                    },
+                    {
+                        "id": "3de1911f-f19f-48aa-8e2a-fd30ff75a96b",
+                        "name": "INTERLOCK COTTON",
+                        "image": "/cms-assets/fabric/132a2576daf606e4b477.webp",
+                        "weight": "",
+                        "category": "cotton",
+                        "imageAlt": "INTERLOCK COTTON fabric swatch"
+                    },
+                    {
+                        "id": "58e903d2-5cae-46dc-9e5b-869eb5e84711",
+                        "name": "Interlock Microfiber",
+                        "image": "/cms-assets/fabric/2551eb25c547955dd326.webp",
+                        "weight": "150GSM",
+                        "category": "microfiber",
+                        "imageAlt": "Interlock Microfiber fabric swatch"
+                    },
+                    {
+                        "id": "0ba25e7d-6c5a-4ddc-be44-c7a8fff83aa3",
+                        "name": "Jacquard Cotton Fabrics",
+                        "image": "/cms-assets/fabric/0ea1d35d839ba912614a.webp",
+                        "weight": "",
+                        "category": "cotton",
+                        "imageAlt": "Jacquard Cotton Fabrics fabric swatch"
+                    },
+                    {
+                        "id": "b1103955-51b5-45a7-9894-c766e8585b76",
+                        "name": "Lycra Spandex",
+                        "image": "/cms-assets/fabric/50f6e5caf321cc657fa9.webp",
+                        "weight": "190GSM, 240GSM, 280GSM",
+                        "category": "spandex",
+                        "imageAlt": "Lycra Spandex fabric swatch"
+                    },
+                    {
+                        "id": "8cb09564-2c4b-4739-a8cb-5c7e7c3ddc1e",
+                        "name": "Microfiber Eyelet",
+                        "image": "/cms-assets/fabric/8215bcbb946d9fb99a9b.webp",
+                        "weight": "150GSM, 180GSM",
+                        "category": "microfiber",
+                        "imageAlt": "Microfiber Eyelet fabric swatch"
+                    },
+                    {
+                        "id": "a9f2cf3e-dcb1-4924-ab48-5da08670ac11",
+                        "name": "Mini Eyelet Microfiber",
+                        "image": "/cms-assets/fabric/71d8ee05d53367337cf0.webp",
+                        "weight": "150GSM, 160GSM",
+                        "category": "microfiber",
+                        "imageAlt": "Mini Eyelet Microfiber fabric swatch"
+                    },
+                    {
+                        "id": "fa26faf2-13c5-432c-9911-2bb80cbb5ecc",
+                        "name": "Oversized Heavy Jersey Cotton",
+                        "image": "/cms-assets/fabric/c18abd187207657fdbba.webp",
+                        "weight": "260GSM",
+                        "category": "cotton",
+                        "imageAlt": "Oversized Heavy Jersey Cotton fabric swatch"
+                    },
+                    {
+                        "id": "1ef9cd6b-d2a7-4211-9e30-75eadc341181",
+                        "name": "Polar Eyelet Microfiber",
+                        "image": "/cms-assets/fabric/6c0a99eac33070cc1f68.webp",
+                        "weight": "160GSM",
+                        "category": "microfiber",
+                        "imageAlt": "Polar Eyelet Microfiber fabric swatch"
+                    },
+                    {
+                        "id": "a85297cb-fb42-4693-824a-33b4f6cd76ef",
+                        "name": "Polo Cotton Lacoste/Pique",
+                        "image": "/cms-assets/fabric/bbdcd4f2612ae1980b65.webp",
+                        "weight": "",
+                        "category": "pique",
+                        "imageAlt": "Polo Cotton Lacoste/Pique fabric swatch"
+                    },
+                    {
+                        "id": "ea65e63d-6f67-4cb7-b75c-b5540b22e045",
+                        "name": "Popcorn Microfiber",
+                        "image": "/cms-assets/fabric/24342cf0ef7df2d52481.webp",
+                        "weight": "155GSM",
+                        "category": "microfiber",
+                        "imageAlt": "Popcorn Microfiber fabric swatch"
+                    },
+                    {
+                        "id": "ddc3da41-153a-4f34-b669-72566a96ed51",
+                        "name": "Superlite Ultron Microfiber",
+                        "image": "/cms-assets/fabric/81759dbff5b5cce645e6.webp",
+                        "weight": "135GSM",
+                        "category": "microfiber",
+                        "imageAlt": "Superlite Ultron Microfiber fabric swatch"
+                    },
+                    {
+                        "id": "6a8e2094-72f2-40a2-9391-e4f5f4c39271",
+                        "name": "UA Melange Microfiber",
+                        "image": "/cms-assets/fabric/d201efd1c14e5bc8b422.webp",
+                        "weight": "160GSM",
+                        "category": "microfiber",
+                        "imageAlt": "UA Melange Microfiber fabric swatch"
+                    },
+                    {
+                        "id": "00afef1a-541c-440d-8eb8-7873e36572df",
+                        "name": "Ultra Jacquard Microfiber",
+                        "image": "/cms-assets/fabric/c2fd7c06048397a6306f.webp",
+                        "weight": "115GSM",
+                        "category": "microfiber",
+                        "imageAlt": "Ultra Jacquard Microfiber fabric swatch"
+                    }
+                ],
+                "categories": [
+                    {
+                        "id": "cotton",
+                        "blurb": "Tees, hoodies, casualwear",
+                        "label": "Cotton"
+                    },
+                    {
+                        "id": "microfiber",
+                        "blurb": "Performance jerseys, sublimation",
+                        "label": "Microfiber"
+                    },
+                    {
+                        "id": "pique",
+                        "blurb": "Polo shirts, uniforms",
+                        "label": "Pique"
+                    },
+                    {
+                        "id": "spandex",
+                        "blurb": "Activewear, compression",
+                        "label": "Spandex"
+                    },
+                    {
+                        "id": "other",
+                        "blurb": "Specialty and jacquard",
+                        "label": "Other"
+                    }
+                ],
+                "headingEnd": "then everything else.",
+                "headingStart": "Material first,",
+                "introduction": "Fabric decides how a garment fits, breathes, prints, and lasts. We help match the material to how the piece will actually be used."
+            }
+        },
+        "/portfolio": {
+            "portfolio": {
+                "items": [
+                    {
+                        "id": "7df7c7fc-5739-4ace-8722-ebf036730cbd",
+                        "slug": "airism-dtf-print-oversized-outer-cotton-inner-poly-spandex",
+                        "image": "/cms-assets/portfolio/full/8b005791091ef2421b8c.webp",
+                        "title": "“Airism” DTF Print Oversized Tee",
+                        "detail": "Outer cotton, inner poly spandex",
+                        "method": "DTF printing",
+                        "status": "published",
+                        "imageAlt": "“Airism” DTF Print Oversized Tee",
+                        "thumbnail": "/cms-assets/portfolio/cards/6f4250bda1542988360f.webp"
+                    },
+                    {
+                        "id": "6652d861-90d8-49d3-8770-38d7a3e7c0bd",
+                        "slug": "bonnets-mittens-booties-set",
+                        "image": "/cms-assets/portfolio/full/43915bd8237feaebc65f.webp",
+                        "title": "Bonnets Mittens Booties Set",
+                        "detail": "",
+                        "method": "",
+                        "status": "published",
+                        "imageAlt": "Bonnets Mittens Booties Set",
+                        "thumbnail": "/cms-assets/portfolio/cards/70eba1b74f0ddb1648a5.webp"
+                    },
+                    {
+                        "id": "7b894eb8-471a-4502-b62c-d784eb2c0d9a",
+                        "slug": "cvc-crop-top",
+                        "image": "/cms-assets/portfolio/full/f89092b651229f61c103.webp",
+                        "title": "CVC Crop Top",
+                        "detail": "",
+                        "method": "",
+                        "status": "published",
+                        "imageAlt": "CVC Crop Top",
+                        "thumbnail": "/cms-assets/portfolio/cards/804aea1688511de5e670.webp"
+                    },
+                    {
+                        "id": "279a96b2-80e5-43d2-ace4-036a6b930042",
+                        "slug": "embroidered-jogger-pants-with-zipper-pocket-and-drawstring",
+                        "image": "/cms-assets/portfolio/full/1b15ec1943d764f2afef.webp",
+                        "title": "Embroidered Jogger Pants with Zipper Pocket and Drawstring",
+                        "detail": "",
+                        "method": "Embroidery",
+                        "status": "published",
+                        "imageAlt": "Embroidered Jogger Pants with Zipper Pocket and Drawstring",
+                        "thumbnail": "/cms-assets/portfolio/cards/c5badd14322db492e6e2.webp"
+                    },
+                    {
+                        "id": "b71a9237-e958-48fd-a561-1a3c3f5a03ea",
+                        "slug": "fc-interlock-kimono-rompers",
+                        "image": "/cms-assets/portfolio/full/9eea63171056dfd7116c.webp",
+                        "title": "FC Interlock Kimono Rompers",
+                        "detail": "",
+                        "method": "",
+                        "status": "published",
+                        "imageAlt": "FC Interlock Kimono Rompers",
+                        "thumbnail": "/cms-assets/portfolio/cards/f479d922309bfb149e32.webp"
+                    },
+                    {
+                        "id": "a3dcef1c-0337-4a3c-ade2-bf1e96a10285",
+                        "slug": "french-terry-sweater",
+                        "image": "/cms-assets/portfolio/full/c79510e0f3e0182cedc7.webp",
+                        "title": "French Terry Sweater",
+                        "detail": "",
+                        "method": "",
+                        "status": "published",
+                        "imageAlt": "French Terry Sweater",
+                        "thumbnail": "/cms-assets/portfolio/cards/a0641687e931db1344b3.webp"
+                    },
+                    {
+                        "id": "a9ee889e-c05b-4146-8b55-737a862d6f87",
+                        "slug": "full-print-long-sleeve-pyjamas",
+                        "image": "/cms-assets/portfolio/full/3c49e8f4b481cd868c9f.webp",
+                        "title": "Full Print Long Sleeve Pyjamas",
+                        "detail": "",
+                        "method": "Full print",
+                        "status": "published",
+                        "imageAlt": "Full Print Long Sleeve Pyjamas",
+                        "thumbnail": "/cms-assets/portfolio/cards/3419674b05790a437846.webp"
+                    },
+                    {
+                        "id": "cf476594-d191-4bd1-a08a-8fe5861513b1",
+                        "slug": "gold-foil-print-quick-dry-tee",
+                        "image": "/cms-assets/portfolio/full/e32fa9c83d6c7cf525c6.webp",
+                        "title": "Gold Foil Print Quick Dry Tee",
+                        "detail": "",
+                        "method": "Gold foil print",
+                        "status": "published",
+                        "imageAlt": "Gold Foil Print Quick Dry Tee",
+                        "thumbnail": "/cms-assets/portfolio/cards/833f976161128e4b976f.webp"
+                    },
+                    {
+                        "id": "01b74eb0-8676-4ac7-b417-a6d373df14a1",
+                        "slug": "heavy-jersey-oversized-tee",
+                        "image": "/cms-assets/portfolio/full/cc63773e181d2a9233a0.webp",
+                        "title": "Heavy Jersey Oversized Tee",
+                        "detail": "",
+                        "method": "",
+                        "status": "published",
+                        "imageAlt": "Heavy Jersey Oversized Tee",
+                        "thumbnail": "/cms-assets/portfolio/cards/cab7128e339f64926506.webp"
+                    },
+                    {
+                        "id": "cabc2289-8025-424f-90c5-2ac49fb50be7",
+                        "slug": "high-den-printing-tc-pique",
+                        "image": "/cms-assets/portfolio/full/1c39bd3f478b083802aa.webp",
+                        "title": "High Den Printing TC Pique",
+                        "detail": "",
+                        "method": "High-density print",
+                        "status": "published",
+                        "imageAlt": "High Den Printing TC Pique",
+                        "thumbnail": "/cms-assets/portfolio/cards/a3f39e6cd7d3ced3a38f.webp"
+                    },
+                    {
+                        "id": "fc33109e-97ca-47b6-a99c-fee823137182",
+                        "slug": "jacquard-cotton-swing-top-set",
+                        "image": "/cms-assets/portfolio/full/1832fdbfaf1d6f535205.webp",
+                        "title": "Jacquard Cotton Swing Top Set",
+                        "detail": "",
+                        "method": "Jacquard",
+                        "status": "published",
+                        "imageAlt": "Jacquard Cotton Swing Top Set",
+                        "thumbnail": "/cms-assets/portfolio/cards/2b6f8e763f6fe7b1100d.webp"
+                    },
+                    {
+                        "id": "f0a008b6-0e67-4a61-9adb-3917f6685e2b",
+                        "slug": "lycra-hoodie-with-neon-drawstring",
+                        "image": "/cms-assets/portfolio/full/07ecabb4ab80d33f0ca1.webp",
+                        "title": "Lycra Hoodie with Neon Drawstring",
+                        "detail": "",
+                        "method": "",
+                        "status": "published",
+                        "imageAlt": "Lycra Hoodie with Neon Drawstring",
+                        "thumbnail": "/cms-assets/portfolio/cards/7f3d1b86e11376727d7c.webp"
+                    },
+                    {
+                        "id": "dc115527-20f1-4f00-b1f1-1d57ef4d658e",
+                        "slug": "melange-quick-dry-training-tee",
+                        "image": "/cms-assets/portfolio/full/5943f9438157ed8744b3.webp",
+                        "title": "Melange Quick Dry Training Tee",
+                        "detail": "",
+                        "method": "",
+                        "status": "published",
+                        "imageAlt": "Melange Quick Dry Training Tee",
+                        "thumbnail": "/cms-assets/portfolio/cards/85bda83590fa8bf9ea51.webp"
+                    },
+                    {
+                        "id": "336dc163-002c-42b5-abac-5f80c385d3b6",
+                        "slug": "microfiber-spandex-polo-tee",
+                        "image": "/cms-assets/portfolio/full/f0187111687c1172d671.webp",
+                        "title": "Microfiber Spandex Polo Tee",
+                        "detail": "",
+                        "method": "",
+                        "status": "published",
+                        "imageAlt": "Microfiber Spandex Polo Tee",
+                        "thumbnail": "/cms-assets/portfolio/cards/754d03ef4a8b222e34e6.webp"
+                    },
+                    {
+                        "id": "a8511fa4-fe0e-45a7-91fe-57305d9c93f6",
+                        "slug": "neon-printing-fc-t-shirt",
+                        "image": "/cms-assets/portfolio/full/ffb75e01da3f5de19787.webp",
+                        "title": "Neon Printing FC T-Shirt",
+                        "detail": "",
+                        "method": "Neon print",
+                        "status": "published",
+                        "imageAlt": "Neon Printing FC T-Shirt",
+                        "thumbnail": "/cms-assets/portfolio/cards/d4e205d8c98da2bbaa0a.webp"
+                    },
+                    {
+                        "id": "fe80b75e-925a-46cb-827a-a4be52b6071f",
+                        "slug": "photo-print-40-fc-interlock",
+                        "image": "/cms-assets/portfolio/full/4f8f7e7aa3ea22961b75.webp",
+                        "title": "Photo Print 40 FC Interlock",
+                        "detail": "",
+                        "method": "Photo print",
+                        "status": "published",
+                        "imageAlt": "Photo Print 40 FC Interlock",
+                        "thumbnail": "/cms-assets/portfolio/cards/d97efd6e253781248e3c.webp"
+                    },
+                    {
+                        "id": "b8864ee8-d37f-420a-a5d4-bc7dd5244b33",
+                        "slug": "sublimation-marathon-t-shirt",
+                        "image": "/cms-assets/portfolio/full/112574b388c08b553b98.webp",
+                        "title": "Sublimation Marathon T-Shirt",
+                        "detail": "",
+                        "method": "Sublimation",
+                        "status": "published",
+                        "imageAlt": "Sublimation Marathon T-Shirt",
+                        "thumbnail": "/cms-assets/portfolio/cards/6ca5334ba62f0f391123.webp"
+                    },
+                    {
+                        "id": "16e5cc0b-7bc0-4275-8edb-7d1cfaad71de",
+                        "slug": "sublimation-retro-collar-jersey",
+                        "image": "/cms-assets/portfolio/full/06a82445ca8e3c6c0e9d.webp",
+                        "title": "Sublimation Retro Collar Jersey",
+                        "detail": "",
+                        "method": "Sublimation",
+                        "status": "published",
+                        "imageAlt": "Sublimation Retro Collar Jersey",
+                        "thumbnail": "/cms-assets/portfolio/cards/1a9eccda79c86cc0d089.webp"
+                    },
+                    {
+                        "id": "1c3dc352-1a57-4386-b2f3-5f8f576f784a",
+                        "slug": "superlite-mesh-running-tee",
+                        "image": "/cms-assets/portfolio/full/73c1df5cf0b36d6fe84d.webp",
+                        "title": "Superlite Mesh Running Tee",
+                        "detail": "",
+                        "method": "",
+                        "status": "published",
+                        "imageAlt": "Superlite Mesh Running Tee",
+                        "thumbnail": "/cms-assets/portfolio/cards/283bf8501b2e4e9100f6.webp"
+                    },
+                    {
+                        "id": "eb708fff-3a51-4884-bbae-06ca9ee97a90",
+                        "slug": "teloton-cotton-printed-t-shirt",
+                        "image": "/cms-assets/portfolio/full/d1e746c60281063e0b51.webp",
+                        "title": "Teloton Cotton Printed T-Shirt",
+                        "detail": "",
+                        "method": "",
+                        "status": "published",
+                        "imageAlt": "Teloton Cotton Printed T-Shirt",
+                        "thumbnail": "/cms-assets/portfolio/cards/255432c0afb370be5bce.webp"
+                    },
+                    {
+                        "id": "9f99b006-65f4-4d0a-81d2-8d81ec93fa68",
+                        "slug": "zoo-printed-children-t-shirt",
+                        "image": "/cms-assets/portfolio/full/8f78e93591603bf6d80f.webp",
+                        "title": "Zoo Printed Children T-Shirt",
+                        "detail": "",
+                        "method": "",
+                        "status": "published",
+                        "imageAlt": "Zoo Printed Children T-Shirt",
+                        "thumbnail": "/cms-assets/portfolio/cards/61fb1bb4c9fd2bab7c7b.webp"
+                    }
+                ],
+                "madeBy": "Brightness Apparel, Malaysia",
+                "buttonText": "Produce something like this",
+                "headingEnd": "put into production.",
+                "headingStart": "Work we have",
+                "introduction": "Garments manufactured for events, corporate programs, and apparel labels. Drag the deck, or use the arrow keys."
+            }
+        },
+        "/solutions": {
+            "solutions": {
+                "items": [
+                    {
+                        "icon": "Layers",
+                        "slug": "fabric-selection",
+                        "image": "/cms-assets/process/946766e8134527e718a1.webp",
+                        "title": "Fabric Selection",
+                        "number": "01",
+                        "imageAlt": "Fabric Selection",
+                        "description": "Choosing weight, stretch, and finish against how the garment will actually be worn and washed."
+                    },
+                    {
+                        "icon": "Scissors",
+                        "slug": "sample-making",
+                        "image": "/cms-assets/process/c9b3b1206510ab6295cc.webp",
+                        "title": "Sample Making",
+                        "number": "02",
+                        "imageAlt": "Sample Making",
+                        "description": "A physical sample to approve fit, colour, and construction before any bulk cutting begins."
+                    },
+                    {
+                        "icon": "Tag",
+                        "slug": "labelling-hangtag",
+                        "image": "/cms-assets/process/6704c0262a4b83f857e5.webp",
+                        "title": "Labelling & Hangtag",
+                        "number": "03",
+                        "imageAlt": "Labelling & Hangtag",
+                        "description": "Woven labels, care labels, size tabs, and hangtags applied to your brand's specification."
+                    },
+                    {
+                        "icon": "Wind",
+                        "slug": "ironing",
+                        "image": "/cms-assets/process/bb67d811aaa29254c736.webp",
+                        "title": "Ironing",
+                        "number": "04",
+                        "imageAlt": "Ironing",
+                        "description": "Pressing and steaming so every piece arrives shaped and presentable, not creased from the box."
+                    },
+                    {
+                        "icon": "ShieldCheck",
+                        "slug": "quality-check",
+                        "image": "/cms-assets/process/d3114b24728fd4351a18.webp",
+                        "title": "Quality Check",
+                        "number": "05",
+                        "imageAlt": "Quality Check",
+                        "description": "Measurements, stitching, and decoration inspected piece by piece against the approved sample."
+                    },
+                    {
+                        "icon": "Package",
+                        "slug": "packaging-shipping",
+                        "image": "/cms-assets/process/76d85a679dc60c612e13.webp",
+                        "title": "Packaging & Shipping",
+                        "number": "06",
+                        "imageAlt": "Packaging & Shipping",
+                        "description": "Folded, bagged, and packed for dispatch, with coordination through to your delivery date."
+                    }
+                ],
+                "headingEnd": "one roof.",
+                "headingStart": "Everything under",
+                "introduction": "From raw fabric to packed cartons, every stage runs in-house — so there is one team accountable for the finished garment."
+            }
         }
     },
-    "version": 3,
+    "version": 4,
     "websiteId": "82a18e9e-ea66-4834-8b4d-a7625eb59bef",
     "formatVersion": 1,
-    "publicationId": "b5bf8518-33c6-49ec-8108-db45814ad75d"
+    "publicationId": "69748395-5eb7-4b4a-b978-8d1fcb95edf9"
 }
