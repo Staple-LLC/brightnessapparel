@@ -1,31 +1,31 @@
 {
-  "formatVersion": 1,
-  "websiteId": "82a18e9e-ea66-4834-8b4d-a7625eb59bef",
-  "publicationId": "bc4e1105-918b-4e4d-a3f6-3b8b2dcf2114",
-  "version": 1,
-  "pages": {
-    "/": {
-      "hero": {
-        "headlineStart": "Made to",
-        "headlineEnd": "spec.",
-        "description": "Event Apparel, Corporate Uniforms, Fashion and Sports apparel factory, 30+ Years of Manufacturing Excellence In Malaysia.",
-        "primaryButton": "Discuss a Project",
-        "secondaryButton": "View Capabilities"
-      }
+    "pages": {
+        "/": {
+            "hero": {
+                "description": "Event Apparel, Corporate Uniforms, Fashion and Sports apparel factory, 30+ Years of Manufacturing Excellence In Malaysia.",
+                "headlineEnd": "spec",
+                "headlineStart": "Made to",
+                "primaryButton": "Discuss a Project",
+                "secondaryButton": "View Capabilities"
+            }
+        },
+        "/contact": {
+            "contact": {
+                "email": "brightnessapparel100@gmail.com",
+                "location": "Malaysia — working with brands worldwide",
+                "minimums": "Discussed per garment and decoration method",
+                "headingEnd": "production brief.",
+                "buttonLabel": "Message us on WhatsApp",
+                "explanation": "The chat opens with a short checklist already filled in — garment, quantity, target date, and artwork. Answer what you know and we will come back with a quote.",
+                "headingStart": "Start your",
+                "introduction": "Share what you want to produce, your target quantity, timeline, and any reference garments or artwork.",
+                "whatsappNumber": "60167528300",
+                "whatsappMessage": "Hi Brightness Apparel, I'd like to enquire about production.\n\nGarment:\nQuantity:\nTarget date:\nArtwork / reference:"
+            }
+        }
     },
-    "/contact": {
-      "contact": {
-        "headingStart": "Start your",
-        "headingEnd": "production brief.",
-        "introduction": "Share what you want to produce, your target quantity, timeline, and any reference garments or artwork.",
-        "email": "brightnessapparel100@gmail.com",
-        "whatsappNumber": "60167528300",
-        "whatsappMessage": "Hi Brightness Apparel, I'd like to enquire about production.\n\nGarment:\nQuantity:\nTarget date:\nArtwork / reference:",
-        "buttonLabel": "Message us on WhatsApp",
-        "explanation": "The chat opens with a short checklist already filled in \u2014 garment, quantity, target date, and artwork. Answer what you know and we will come back with a quote.",
-        "location": "Malaysia \u2014 working with brands worldwide",
-        "minimums": "Discussed per garment and decoration method"
-      }
-    }
-  }
+    "version": 2,
+    "websiteId": "82a18e9e-ea66-4834-8b4d-a7625eb59bef",
+    "formatVersion": 1,
+    "publicationId": "ee8c368d-a54c-44bd-89bc-10093315ff1b"
 }
