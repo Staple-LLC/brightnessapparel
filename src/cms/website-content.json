@@ -3,7 +3,7 @@
         "/": {
             "hero": {
                 "description": "Event Apparel, Corporate Uniforms, Fashion and Sports apparel factory, 30+ Years of Manufacturing Excellence In Malaysia.",
-                "headlineEnd": "spec",
+                "headlineEnd": "spec.",
                 "headlineStart": "Made to",
                 "primaryButton": "Discuss a Project",
                 "secondaryButton": "View Capabilities"
@@ -24,8 +24,8 @@
             }
         }
     },
-    "version": 2,
+    "version": 3,
     "websiteId": "82a18e9e-ea66-4834-8b4d-a7625eb59bef",
     "formatVersion": 1,
-    "publicationId": "ee8c368d-a54c-44bd-89bc-10093315ff1b"
+    "publicationId": "b5bf8518-33c6-49ec-8108-db45814ad75d"
 }
