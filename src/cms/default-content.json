@@ -1,0 +1,21 @@
+{
+  "hero": {
+    "headlineStart": "Made to",
+    "headlineEnd": "spec.",
+    "description": "Event Apparel, Corporate Uniforms, Fashion and Sports apparel factory, 30+ Years of Manufacturing Excellence In Malaysia.",
+    "primaryButton": "Discuss a Project",
+    "secondaryButton": "View Capabilities"
+  },
+  "contact": {
+    "headingStart": "Start your",
+    "headingEnd": "production brief.",
+    "introduction": "Share what you want to produce, your target quantity, timeline, and any reference garments or artwork.",
+    "email": "brightnessapparel100@gmail.com",
+    "whatsappNumber": "60167528300",
+    "whatsappMessage": "Hi Brightness Apparel, I'd like to enquire about production.\n\nGarment:\nQuantity:\nTarget date:\nArtwork / reference:",
+    "buttonLabel": "Message us on WhatsApp",
+    "explanation": "The chat opens with a short checklist already filled in — garment, quantity, target date, and artwork. Answer what you know and we will come back with a quote.",
+    "location": "Malaysia — working with brands worldwide",
+    "minimums": "Discussed per garment and decoration method"
+  }
+}

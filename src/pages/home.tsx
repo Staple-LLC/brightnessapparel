@@ -1,3 +1,4 @@
+import {heroContent} from "@/cms/content";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import SpecularButton from "@/components/ui/specular-button";
@@ -58,9 +59,9 @@ export default function HomePage() {
             source plate; 1271 clears her right edge at plate x=1236 at every
             viewport. Mobile keeps a plain centred line. */}
         <span className="mx-auto block w-full max-w-7xl px-6 text-[clamp(3.25rem,13.5vw,11rem)] uppercase leading-[0.82] tracking-[-0.02em] text-background sm:px-10 lg:relative lg:max-w-none lg:pl-[calc(160*var(--u))] lg:pr-0 lg:text-[calc(241*var(--u))]">
-          <span>Made to</span>{" "}
+          <span>{heroContent.headlineStart}</span>{" "}
           <span className="lg:absolute lg:left-[calc(1271*var(--u))] lg:top-0">
-            spec.
+            {heroContent.headlineEnd}
           </span>
         </span>
       </h1>
@@ -92,8 +93,7 @@ export default function HomePage() {
           {/* max-w-lg, up from md: this line is half again as long as the one
               it replaced and ran to four lines on the old measure. */}
           <p className="animate-fade-rise-delay-2 max-w-lg text-sm leading-relaxed text-background/75 sm:text-base">
-            Event Apparel, Corporate Uniforms, Fashion and Sports apparel
-            factory, 30+ Years of Manufacturing Excellence In Malaysia.
+            {heroContent.description}
           </p>
 
           <div className="animate-fade-rise-delay-3 mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
@@ -127,7 +127,7 @@ export default function HomePage() {
                   block-level badge below would drop onto its own line. This row
                   is what keeps label and badge side by side. */}
               <span className="flex items-center gap-3">
-                Discuss a Project
+                {heroContent.primaryButton}
                 {/* Two arrows in a clipped circle: one leaves, the next arrives. */}
                 <span className="relative flex h-7 w-7 shrink-0 items-center justify-center overflow-hidden rounded-full bg-[hsl(var(--brand))] text-foreground">
                   <ArrowRight className="size-3.5 transition-transform duration-300 ease-out group-hover:translate-x-6 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0" />
@@ -160,7 +160,7 @@ export default function HomePage() {
             >
               {/* h-7 matches the arrow badge opposite, so both buttons enclose
                   the same 28px inner box and end up the same height. */}
-              <span className="flex h-7 items-center">View Capabilities</span>
+              <span className="flex h-7 items-center">{heroContent.secondaryButton}</span>
             </SpecularButton>
           </div>
         </div>

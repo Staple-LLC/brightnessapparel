@@ -1,0 +1,137 @@
+{
+  "organization": "Brightness Apparel",
+  "website": "Brightness Apparel",
+  "domain": "https://brightnessapparel.my",
+  "framework": "react",
+  "sections": [
+    {
+      "page_name": "Homepage",
+      "page_slug": "/",
+      "section_key": "hero",
+      "definition": {
+        "title": "Homepage hero",
+        "fields": [
+          {
+            "key": "headlineStart",
+            "label": "Headline start",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "headlineEnd",
+            "label": "Headline end",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "description",
+            "label": "Description",
+            "type": "longText",
+            "required": true
+          },
+          {
+            "key": "primaryButton",
+            "label": "Primary button",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "secondaryButton",
+            "label": "Secondary button",
+            "type": "text",
+            "required": true
+          }
+        ]
+      },
+      "initial_content": {
+        "headlineStart": "Made to",
+        "headlineEnd": "spec.",
+        "description": "Event Apparel, Corporate Uniforms, Fashion and Sports apparel factory, 30+ Years of Manufacturing Excellence In Malaysia.",
+        "primaryButton": "Discuss a Project",
+        "secondaryButton": "View Capabilities"
+      }
+    },
+    {
+      "page_name": "Contact",
+      "page_slug": "/contact",
+      "section_key": "contact",
+      "definition": {
+        "title": "Contact details and enquiry",
+        "fields": [
+          {
+            "key": "headingStart",
+            "label": "Heading start",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "headingEnd",
+            "label": "Heading end",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "introduction",
+            "label": "Introduction",
+            "type": "longText",
+            "required": true
+          },
+          {
+            "key": "email",
+            "label": "Email",
+            "type": "email",
+            "required": true
+          },
+          {
+            "key": "whatsappNumber",
+            "label": "Whatsapp number",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "whatsappMessage",
+            "label": "Whatsapp message",
+            "type": "longText",
+            "required": true
+          },
+          {
+            "key": "buttonLabel",
+            "label": "Button label",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "explanation",
+            "label": "Explanation",
+            "type": "longText",
+            "required": true
+          },
+          {
+            "key": "location",
+            "label": "Location",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "minimums",
+            "label": "Minimums",
+            "type": "text",
+            "required": true
+          }
+        ]
+      },
+      "initial_content": {
+        "headingStart": "Start your",
+        "headingEnd": "production brief.",
+        "introduction": "Share what you want to produce, your target quantity, timeline, and any reference garments or artwork.",
+        "email": "brightnessapparel100@gmail.com",
+        "whatsappNumber": "60167528300",
+        "whatsappMessage": "Hi Brightness Apparel, I'd like to enquire about production.\n\nGarment:\nQuantity:\nTarget date:\nArtwork / reference:",
+        "buttonLabel": "Message us on WhatsApp",
+        "explanation": "The chat opens with a short checklist already filled in \u2014 garment, quantity, target date, and artwork. Answer what you know and we will come back with a quote.",
+        "location": "Malaysia \u2014 working with brands worldwide",
+        "minimums": "Discussed per garment and decoration method"
+      }
+    }
+  ]
+}

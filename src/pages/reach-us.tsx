@@ -1,29 +1,18 @@
+import {contactContent} from "@/cms/content";
 import { Section, SectionHeading, SectionLede, Quiet } from "@/components/section";
 
-const CONTACT_EMAIL = "brightnessapparel100@gmail.com";
-
-const WHATSAPP_NUMBER = "60167528300";
-
-/* The form used to collect these four things. Prefilling the message keeps
-   that structure without a form to submit — the enquiry arrives already
-   itemised rather than as "hi, do you make shirts?". */
-const WHATSAPP_TEMPLATE = [
-  "Hi Brightness Apparel, I'd like to enquire about production.",
-  "",
-  "Garment:",
-  "Quantity:",
-  "Target date:",
-  "Artwork / reference:",
-].join("\n");
+const CONTACT_EMAIL = contactContent.email;
+const WHATSAPP_NUMBER = contactContent.whatsappNumber;
+const WHATSAPP_TEMPLATE = contactContent.whatsappMessage;
 
 const DETAILS: { label: string; value: string; href?: string }[] = [
   {
     label: "Email",
     value: CONTACT_EMAIL,
-    href: `https://mail.google.com/mail/?view=cm&to=${CONTACT_EMAIL}`,
+    href: `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(CONTACT_EMAIL)}`,
   },
-  { label: "Based in", value: "Malaysia — working with brands worldwide" },
-  { label: "Minimums", value: "Discussed per garment and decoration method" },
+  { label: "Based in", value: contactContent.location },
+  { label: "Minimums", value: contactContent.minimums },
 ];
 
 export default function ReachUsPage() {
@@ -32,12 +21,11 @@ export default function ReachUsPage() {
       <div className="grid gap-12 lg:grid-cols-12 lg:gap-10">
         <div className="lg:col-span-5">
           <SectionHeading>
-            Start your <Quiet>production brief.</Quiet>
+            {contactContent.headingStart}{" "}<Quiet>{contactContent.headingEnd}</Quiet>
           </SectionHeading>
 
           <SectionLede>
-            Share what you want to produce, your target quantity, timeline, and
-            any reference garments or artwork.
+            {contactContent.introduction}
           </SectionLede>
         </div>
 
@@ -51,16 +39,14 @@ export default function ReachUsPage() {
               rel="noopener noreferrer"
               className="group inline-flex min-h-[44px] items-center gap-3 rounded-full bg-[hsl(var(--brand))] px-8 py-5 text-base font-medium text-foreground transition-transform hover:scale-[1.02] motion-reduce:transition-none"
             >
-              Message us on WhatsApp
+              {contactContent.buttonLabel}
               <span className="transition-transform duration-300 group-hover:translate-x-1 motion-reduce:transition-none">
                 →
               </span>
             </a>
 
             <p className="dim mt-6 max-w-md text-sm leading-relaxed">
-              The chat opens with a short checklist already filled in — garment,
-              quantity, target date, and artwork. Answer what you know and we
-              will come back with a quote.
+              {contactContent.explanation}
             </p>
 
             <dl className="mt-12 text-sm">

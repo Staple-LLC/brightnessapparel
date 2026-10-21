@@ -1,0 +1,10 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {validateContent} from './content-validation.mjs';
+const content=JSON.parse(await readFile(new URL('../src/cms/website-content.json',import.meta.url),'utf8'));
+const defaults=JSON.parse(await readFile(new URL('../src/cms/default-content.json',import.meta.url),'utf8'));
+test('tracked content passes the website schema',()=>assert.doesNotThrow(()=>validateContent(content,defaults)));
+test('a changed headline is read from JSON without changing components',()=>{const changed=structuredClone(content);changed.pages['/'].hero.headlineStart='Made for your brand';assert.equal(validateContent(changed,defaults).hero.headlineStart,'Made for your brand');});
+test('content for a different website is rejected',()=>assert.throws(()=>validateContent({...content,websiteId:'another-site'},defaults)));
+test('missing sections and unsafe contact values fail the build',()=>{const broken=structuredClone(content);delete broken.pages['/'].hero;assert.throws(()=>validateContent(broken,defaults));const unsafe=structuredClone(content);unsafe.pages['/contact'].contact.email='javascript:alert(1)';assert.throws(()=>validateContent(unsafe,defaults));});

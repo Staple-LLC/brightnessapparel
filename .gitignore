@@ -22,3 +22,4 @@ dist/
 # Local environment (VITE_ vars are public, but keep local overrides out of git)
 .env
 .env.local
+
